@@ -11,9 +11,9 @@ export default function Home() {
       </Head>
       <main className="flex w-full flex-col justify-center items-center text-center">
         <h1 className="font-bold text-7xl text-fuchsia-600">
-          hello i&apos;m shaun.
+          Hello I&apos;m Shaun.
         </h1>
-        <p className="text-xl mt-16">welcome to my web garden 🌱</p>
+        <p className="text-xl mt-16">Welcome to my web garden 🌱</p>
       </main>
     </div>
   );
