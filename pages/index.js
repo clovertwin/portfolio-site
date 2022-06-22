@@ -13,7 +13,9 @@ export default function Home() {
         <h1 className="font-bold lg:text-7xl text-6xl text-fuchsia-600">
           Hello I&apos;m Shaun.
         </h1>
-        <p className="lg:text-2xl text-xl mt-10">Welcome to my web garden 🌱</p>
+        <p className="lg:text-2xl text-xl mt-10 text-neutral-500">
+          Welcome to my web garden 🌱
+        </p>
       </main>
     </div>
   );
