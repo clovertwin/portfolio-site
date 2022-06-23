@@ -6,7 +6,7 @@ export default function Home() {
       <main className="font-inter relative w-full mx-auto sm:max-w-screen-sm px-4 pt-48">
         <div>
           <section>
-            <div className="flex flex-col items-center space-x-10 sm:flex-row">
+            <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row">
               <div className="rounded-full h-[150px] w-[150px] overflow-hidden">
                 <Image
                   alt="picture of me"
