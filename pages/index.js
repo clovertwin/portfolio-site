@@ -13,6 +13,7 @@ export default function Home() {
                   src="/images/profile-pic.jpg"
                   width={597}
                   height={597}
+                  priority
                 />
               </div>
               <div className="mt-2 text-center sm:mt-0 sm:text-left">

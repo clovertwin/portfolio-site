@@ -24,7 +24,6 @@ function MyApp({ Component, pageProps }) {
           sizes="16x16"
           href="/images/favicon-16x16.png"
         />
-        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <Component {...pageProps} />;
     </>
