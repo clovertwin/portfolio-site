@@ -7,7 +7,7 @@ export default function Home() {
         <div>
           <section>
             <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row">
-              <div className="rounded-full h-[150px] w-[150px] overflow-hidden">
+              <div className="rounded-full h-[155px] w-[155px] overflow-hidden">
                 <Image
                   alt="picture of me"
                   src="/images/profile-pic.jpg"
@@ -29,6 +29,7 @@ export default function Home() {
               </div>
             </div>
           </section>
+          <hr className="mt-16" />
         </div>
       </main>
     </div>
