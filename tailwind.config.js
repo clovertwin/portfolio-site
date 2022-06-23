@@ -10,7 +10,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Karla", ...defaultTheme.fontFamily.sans],
+        manrope: ["Manrope", ...defaultTheme.fontFamily.sans],
+        inter: ["Inter", ...defaultTheme.fontFamily.sans],
       },
     },
   },
