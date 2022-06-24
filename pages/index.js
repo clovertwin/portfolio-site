@@ -7,7 +7,7 @@ export default function Home() {
         <div>
           <section>
             <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
-              <div className="rounded-full h-[150px] w-[150px] overflow-hidden ring-4 ring-blue-600">
+              <div className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600">
                 <Image
                   alt="picture of me"
                   src="/images/profile-pic.jpg"
