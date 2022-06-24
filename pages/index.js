@@ -24,14 +24,33 @@ export default function Home() {
               </div>
             </div>
             <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:text-left">
-              <strong>Welcome</strong> to my <i>corner</i> of the internet ✌️.{" "}
+              <strong>Welcome</strong> to my <i>corner</i> of the internet 👋{" "}
               <strong>
-                This is where I share everything I&apos;m working on and
-                learning
+                This is where I share what I&apos;m working on and learning
               </strong>
-              , as well as serving as a <i>digital garden</i> where I grow my
-              tech career 🌱.
+              , in addition to serving as a <i>digital garden</i> where I grow
+              my career in tech 🌱
             </h2>
+            <div className="flex items-center justify-center gap-8 mt-5 sm:justify-start">
+              <a
+                href="#"
+                className="text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
+              >
+                about
+              </a>
+              <a
+                href="#"
+                className="text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
+              >
+                projects
+              </a>
+              <a
+                href="#"
+                className="text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
+              >
+                blog
+              </a>
+            </div>
           </section>
           <hr className="mt-5 border-2 border-neutral-200 rounded"></hr>
         </div>
