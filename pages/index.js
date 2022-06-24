@@ -11,7 +11,10 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-neutral-50 selection:bg-blue-600/90 selection:text-white">
-      <div className="hidden absolute lg:block lg:right-[10%] lg:top-16 lg:fixed lg:animate-spin-slow">
+      <div
+        role="complementary"
+        className="hidden absolute lg:block lg:right-[10%] lg:top-16 lg:fixed lg:animate-spin-slow xl:right-[15%]"
+      >
         <p ref={circleInstance} className="text-xl text-blue-600">
           SITE-IS-UNDER-CONSTRUCTION-
         </p>
