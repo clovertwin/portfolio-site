@@ -22,12 +22,12 @@ export default function Header() {
         </div>
       </div>
       <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:text-left sm:mt-10">
-        <strong>Welcome</strong> to my <i>corner</i> of the internet 👋{" "}
+        <strong>Welcome</strong> to my <i>corner</i> of the internet!{" "}
         <strong>
           This is where I share what I&apos;m working on and learning
         </strong>
         , in addition to serving as a <i>digital garden</i> where I can grow in
-        my understanding of tech 🌱
+        my understanding of tech.
       </h2>
       <div className="flex items-center justify-center gap-8 mt-5 sm:justify-start">
         <Link href="#aboutMe" scroll={false}>
