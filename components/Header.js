@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   return (
@@ -29,12 +30,11 @@ export default function Header() {
         my understanding of tech 🌱
       </h2>
       <div className="flex items-center justify-center gap-8 mt-5 sm:justify-start">
-        <a
-          href="#"
-          className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
-        >
-          about
-        </a>
+        <Link href="#aboutMe" scroll={false}>
+          <a className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600">
+            about
+          </a>
+        </Link>
         <a
           href="#"
           className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-lg sm:px-8 sm:py-4 sm:border-blue-600 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"

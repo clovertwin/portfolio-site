@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "../components/Header";
+import AboutMe from "../components/AboutMe";
 import CircleType from "circletype";
 
 export default function Home() {
@@ -22,6 +23,7 @@ export default function Home() {
       <main className="font-inter relative w-full mx-auto px-4 pt-20 sm:max-w-screen-sm sm:pt-40">
         <Header />
         <hr className="mt-5 border-2 border-neutral-300 rounded"></hr>
+        <AboutMe />
       </main>
     </div>
   );
