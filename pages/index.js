@@ -20,7 +20,7 @@ export default function Home() {
           SITE-IS-UNDER-CONSTRUCTION-
         </p>
       </div>
-      <main className="font-inter relative w-full mx-auto px-4 pt-20 sm:max-w-screen-sm sm:pt-40">
+      <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-sm sm:pt-40">
         <Header />
         <hr className="mt-5 border-2 border-neutral-300 rounded"></hr>
         <AboutMe />
