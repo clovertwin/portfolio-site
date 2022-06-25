@@ -22,7 +22,8 @@ export default function Home() {
       </div>
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-sm sm:pt-40">
         <Header />
-        <hr className="mt-5 border-2 border-neutral-300 rounded"></hr>
+        {/* <hr className="mt-5 border-2 border-neutral-300 rounded"></hr> */}
+        <div className="border-b-2 border-neutral-300 mt-5"></div>
         <AboutMe />
       </main>
     </div>
