@@ -7,7 +7,7 @@ export default function AboutMe() {
         </h2>
       </div>
       <div className="mt-5 p-4 border-2 border-blue-500 rounded-2xl text-left bg-white shadow-lg text-neutral-500 indent-8 sm:p-7">
-        <p>
+        {/* <p>
           A few years ago, if someone were to tell me that people would be
           scrolling through a{" "}
           <strong>website that I had built myself from scratch</strong>, I
@@ -16,23 +16,24 @@ export default function AboutMe() {
           but it all just seemed so <i>mysterious and impossible</i> to ever
           learn.
         </p>{" "}
-        <br />
-        <p>
+        <br /> */}
+        {/* <p>
           If there is <i>one thing I have learned</i> in this life though,
           it&apos;s that most things are not <i>actually impossible</i>,{" "}
           <strong>they just take work to achieve</strong>.
         </p>
-        <br />
+        <br /> */}
         <p>
-          The <i>crazy</i> thing is, this dosen&apos;t really feel like work to
-          me. As I journey further into{" "}
-          <strong>CSS, Javascript, and React</strong>, and the challenges grow{" "}
-          <i>steeper</i>, I just get <i>more excited</i> to overcome and level
-          up my skills.
+          {/* The <i>crazy</i> thing is, this dosen&apos;t really feel like work to
+          me.  */}
+          As I journey further into <strong>CSS, Javascript, and React</strong>,
+          and the challenges grow <i>steeper</i>, I get <i>more excited</i> to
+          put my skills to use and see what I&apos;ve ive learned come to life
+          on the internet.
         </p>
         <br />
         <p>
-          Now, having <i>never</i> gone to college for computers or ever working
+          Now, having never gone to college for computer science or ever working
           at a tech company before, I dont have much to list here for
           experience. <i>What I do have</i> is a{" "}
           <strong>
