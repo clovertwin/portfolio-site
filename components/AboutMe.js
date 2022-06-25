@@ -26,15 +26,16 @@ export default function AboutMe() {
         <p>
           {/* The <i>crazy</i> thing is, this dosen&apos;t really feel like work to
           me.  */}
-          As I journey further into <strong>CSS, Javascript, and React</strong>,
-          and the challenges grow steeper, I get more excited to put my skills
-          to use and see what I&apos;ve built come to life on the internet.
+          As I journey further into my understanding of{" "}
+          <strong>CSS, Javascript, and React</strong>, and the challenges grow
+          steeper, I get more excited to put my skills to use and see what
+          I&apos;ve built come to life on the internet.
         </p>
         <br />
         <p>
-          Now, having never gone to college for computer science or ever working
-          at a tech company before, I dont have much to list here for
-          experience. What I do have is a{" "}
+          I have never gone to college for computer science or ever worked at a
+          tech company before, I dont have much to list here for experience.
+          What I do have is a{" "}
           <strong>
             burning desire to step up and take my learning to the next level,
             with a company looking for someone who loves a challenge
