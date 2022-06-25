@@ -25,23 +25,25 @@ export default function AboutMe() {
           start my career and learn among professionals.
         </p>
         <br />
-        <p>
-          <strong>
-            Here are a few of the technologies I&apos;ve been using recently:
-          </strong>
-        </p>
-        <div className="mt-4 flex text-base gap-8 sm:text-xl sm:gap-20 sm:justify-start">
-          <div className="flex flex-col">
-            <p>-Javascript</p>
-            <p>-React</p>
-            <p>-Next.js</p>
+        <details className="open:ring-0">
+          <summary className="hover:cursor-pointer">
+            <strong>
+              Here are a few of the technologies I&apos;ve been using recently:
+            </strong>
+          </summary>
+          <div className="mt-4 flex text-base gap-8 sm:text-xl sm:gap-20 sm:justify-start">
+            <div className="flex flex-col">
+              <p>-Javascript</p>
+              <p>-React</p>
+              <p>-Next.js</p>
+            </div>
+            <div className="flex flex-col">
+              <p>-Styled Components</p>
+              <p>-Tailwindcss</p>
+              <p>-Node.js</p>
+            </div>
           </div>
-          <div className="flex flex-col">
-            <p>-Styled Components</p>
-            <p>-Tailwindcss</p>
-            <p>-Node.js</p>
-          </div>
-        </div>
+        </details>
       </div>
     </section>
   );
