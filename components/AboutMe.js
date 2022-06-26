@@ -1,6 +1,9 @@
 export default function AboutMe() {
   return (
-    <section id="aboutMe" className="mt-40 text-lg text-center sm:text-xl">
+    <section
+      id="aboutMe"
+      className="text-lg text-center mt-12 sm:text-xl sm:mt-40"
+    >
       <div className="border-b-4 border-blue-600 inline-block">
         <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
           A little about myself
