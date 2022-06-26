@@ -1,28 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import CircleType from "circletype";
 
 export default function Home() {
-  const [isVisible, setIsVisible] = useState(false);
   const circleInstance = useRef();
-  const aboutMeRef = useRef();
-
-  useEffect(() => {
-    const options = {
-      root: null,
-      rootMargin: "0px",
-      threshold: 0.25,
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-        }
-      });
-    }, options);
-    if (aboutMeRef.current) observer.observe(aboutMeRef.current);
-  }, [aboutMeRef]);
 
   useEffect(() => {
     new CircleType(circleInstance.current).radius(73);
@@ -40,14 +22,7 @@ export default function Home() {
       </div>
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-sm sm:pt-40">
         <Header />
-        {/* <hr className="mt-5 border-2 border-neutral-300 rounded"></hr> */}
-        <div className="border-b-2 border-neutral-300 mt-5"></div>
-        <div
-          ref={aboutMeRef}
-          className={isVisible ? "animate-slide-up" : "opacity-0"}
-        >
-          <AboutMe />
-        </div>
+        <AboutMe />
       </main>
     </div>
   );
