@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import Header from "../components/Header";
+import Nav from "../components/Nav";
 import AboutMe from "../components/AboutMe";
 import CircleType from "circletype";
 
@@ -22,6 +23,7 @@ export default function Home() {
       </div>
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-28 sm:max-w-screen-sm sm:pt-44">
         <Header />
+        <Nav />
         <AboutMe />
       </main>
     </div>
