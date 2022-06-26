@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       animation: {
-        "slide-up": "slideUp 500ms ease-in",
+        "slide-up": "slideUp 500ms ease-in-out",
         "spin-slow": "spin 5s linear infinite",
       },
       fontFamily: {

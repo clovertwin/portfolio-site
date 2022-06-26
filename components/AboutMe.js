@@ -6,13 +6,15 @@ export default function AboutMe() {
 
   useEffect(() => {
     const options = {
-      threshold: 0.25,
+      threshold: 0.2,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           setAboutVisible(true);
+          return;
         }
+        setAboutVisible(false);
       });
     }, options);
     if (aboutRef.current) observer.observe(aboutRef.current);
