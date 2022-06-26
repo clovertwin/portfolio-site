@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header>
+    <section>
       <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
         <div className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600">
           <Image
@@ -48,6 +48,6 @@ export default function Header() {
           blog
         </a>
       </div>
-    </header>
+    </section>
   );
 }

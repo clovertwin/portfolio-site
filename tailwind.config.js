@@ -9,7 +9,20 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideUp: {
+          "0%": {
+            transform: "translateY(40px)",
+            opacity: "0",
+          },
+          "100%": {
+            transform: "translateY(0)",
+            opacity: "1",
+          },
+        },
+      },
       animation: {
+        "slide-up": "slideUp 500ms ease-in",
         "spin-slow": "spin 5s linear infinite",
       },
       fontFamily: {
