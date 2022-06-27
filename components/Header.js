@@ -20,7 +20,7 @@ export default function Header() {
           </h1>
         </div>
       </div>
-      <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:text-left sm:mt-10">
+      <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:mt-10">
         <strong>Welcome</strong> to my <i>corner</i> of the internet!{" "}
         <strong>
           This is where I share what I&apos;m working on and learning
