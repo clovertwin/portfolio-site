@@ -2,6 +2,7 @@ import { useEffect, useRef } from "react";
 import Header from "../components/Header";
 import Nav from "../components/Nav";
 import AboutMe from "../components/AboutMe";
+import Projects from "../components/Projects";
 import CircleType from "circletype";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
         <Header />
         <Nav />
         <AboutMe />
+        <Projects />
       </main>
     </div>
   );

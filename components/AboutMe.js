@@ -44,7 +44,7 @@ export default function AboutMe() {
           <br />
           <p>
             Since then, I&apos;ve cultivated that passion by diving deeper into
-            the world of Javascript. It feels like magic to me when i see the
+            the world of Javascript. It feels like magic to me when I see the
             things I create come to life in front of people&apos;s eyes.
           </p>
           <br />
