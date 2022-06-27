@@ -1,24 +1,9 @@
-import { useEffect, useState, useRef } from "react";
+import { useRef } from "react";
+import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function Projects() {
-  const [isVisible, setIsVisible] = useState(false);
   const projectsRef = useRef();
-
-  useEffect(() => {
-    const options = {
-      threshold: 0.2,
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true);
-          return;
-        }
-        setIsVisible(false);
-      });
-    }, options);
-    if (projectsRef.current) observer.observe(projectsRef.current);
-  }, [projectsRef]);
+  const isVisible = useSectionVisible(projectsRef);
 
   return (
     <div

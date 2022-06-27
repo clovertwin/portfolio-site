@@ -1,24 +1,9 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
+import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function AboutMe() {
-  const [isAboutVisible, setAboutVisible] = useState(false);
   const aboutRef = useRef();
-
-  useEffect(() => {
-    const options = {
-      threshold: 0.2,
-    };
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setAboutVisible(true);
-          return;
-        }
-        setAboutVisible(false);
-      });
-    }, options);
-    if (aboutRef.current) observer.observe(aboutRef.current);
-  }, [aboutRef]);
+  const isAboutVisible = useSectionVisible(aboutRef);
 
   return (
     <div
