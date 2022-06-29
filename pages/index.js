@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
+import MobileMenu from "../components/MobileMenu";
 import Header from "../components/Header";
-import Nav from "../components/Nav";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import CircleType from "circletype";
@@ -23,10 +23,10 @@ export default function Home() {
           SITE-IS-UNDER-CONSTRUCTION-
         </p>
       </div>
+      {/* <MobileMenu /> */}
       <PageNav />
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-14 sm:max-w-screen-sm sm:pt-40">
         <Header />
-        <Nav />
         <AboutMe />
         <Projects />
       </main>
