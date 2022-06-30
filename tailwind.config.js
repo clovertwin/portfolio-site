@@ -23,7 +23,7 @@ module.exports = {
       },
       animation: {
         "slide-up": "slideUp 500ms ease-in-out",
-        "spin-slow": "spin 5s reverse linear infinite",
+        "spin-slow": "spin 10s reverse linear infinite",
       },
       fontFamily: {
         manrope: ["Manrope", ...defaultTheme.fontFamily.sans],

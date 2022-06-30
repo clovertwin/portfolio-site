@@ -22,7 +22,7 @@ export default function Header() {
         </div>
       </div>
       <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:mt-10">
-        <strong>Welcome</strong> to my <i>corner</i> of the internet!{" "}
+        <strong>Welcome</strong> to my <i>corner</i> of the internet! 👋{" "}
         <strong>
           This is where I share what I&apos;m working on and learning
         </strong>
@@ -30,26 +30,7 @@ export default function Header() {
         my understanding of tech.
       </h2>
       <div className="top-0 pt-5 animate-slide-up">
-        <div className="flex items-center justify-center">
-          <Link href="#aboutMe">
-            <a className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-xl mr-8 sm:px-7 sm:py-3 sm:border-blue-600 sm:bg-neutral-50 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600">
-              about
-            </a>
-          </Link>
-          <a
-            href="#projects"
-            className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-xl mr-8 sm:px-7 sm:py-3 sm:border-blue-600 sm:bg-neutral-50 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
-          >
-            projects
-          </a>
-          <a
-            href="#"
-            className="transition duration-300 text-blue-600 hover:text-blue-400 font-bold text-xl sm:px-7 sm:py-3 sm:border-blue-600 sm:bg-neutral-50 sm:border-2 sm:rounded-full sm:hover:text-white sm:hover:bg-blue-600"
-          >
-            blog
-          </a>
-        </div>
-        <div className="border-b-2 border-neutral-300 mt-5"></div>
+        <div className="border-b-2 border-neutral-300"></div>
       </div>
     </header>
   );
