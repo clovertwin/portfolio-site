@@ -18,22 +18,40 @@ export default function MobileMenu({ mobileNavOpen, setMobileNavOpen }) {
           </div>
           <nav>
             <ul className="text-center mt-14 text-2xl font-inter text-slate-400">
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#">Home</Link>
               </li>
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#aboutMe">About</Link>
               </li>
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#projects">Projects</Link>
               </li>
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#">Contact</Link>
               </li>
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#">Blog</Link>
               </li>
-              <li className="pt-6 hover:text-blue-600">
+              <li
+                onClick={handleCloseMenu}
+                className="pt-6 hover:text-blue-600"
+              >
                 <Link href="#">Resume</Link>
               </li>
             </ul>
