@@ -7,7 +7,7 @@ export default function PageNav({ setMobileNavOpen }) {
   };
 
   return (
-    <header className="sticky top-0 z-40 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md shadow-neutral-900/5 sm:px-14">
+    <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md shadow-neutral-900/5 sm:px-14">
       <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 hover:cursor-pointer">
         <Link href="#">
           <a>
@@ -39,14 +39,12 @@ export default function PageNav({ setMobileNavOpen }) {
           </li>
         </ul>
       </div>
-      <div className="flex items-center sm:hidden">
-        <button onClick={handleOpenMenu} className="h-[30px] w-[30px]">
-          <Image
-            alt="menu icon"
-            src="/images/icons8-menu.svg"
-            width={30}
-            height={30}
-          />
+      <div className="sm:hidden pb-1">
+        <button
+          onClick={handleOpenMenu}
+          className="h-[30px] w-[30px] text-3xl text-blue-600"
+        >
+          &#9776;
         </button>
       </div>
     </header>
