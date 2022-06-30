@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import MobileMenu from "../components/MobileMenu";
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
@@ -7,6 +7,7 @@ import CircleType from "circletype";
 import PageNav from "../components/PageNav";
 
 export default function Home() {
+  const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const circleInstance = useRef();
 
   useEffect(() => {
@@ -23,8 +24,11 @@ export default function Home() {
           SITE-IS-UNDER-CONSTRUCTION-
         </p>
       </div>
-      {/* <MobileMenu /> */}
-      <PageNav />
+      <MobileMenu
+        mobileNavOpen={mobileNavOpen}
+        setMobileNavOpen={setMobileNavOpen}
+      />
+      <PageNav setMobileNavOpen={setMobileNavOpen} />
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-14 sm:max-w-screen-sm sm:pt-40">
         <Header />
         <AboutMe />
