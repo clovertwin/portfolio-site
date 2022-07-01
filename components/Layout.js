@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
 import CircleType from "circletype";
+import Footer from "./Footer";
 
 export default function Layout({ children }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -29,6 +30,7 @@ export default function Layout({ children }) {
       <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-14 sm:max-w-screen-md sm:pt-40">
         {children}
       </main>
+      <Footer />
     </div>
   );
 }
