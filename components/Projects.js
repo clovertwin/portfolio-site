@@ -12,7 +12,7 @@ export default function Projects() {
     >
       <section
         id="projects"
-        className="text-lg mt-20 text-center sm:text-xl sm:mt-32"
+        className="text-lg mt-20 text-center sm:text-xl sm:mt-40"
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">

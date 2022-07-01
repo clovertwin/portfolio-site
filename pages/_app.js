@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Layout from "../components/Layout";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
@@ -25,7 +26,9 @@ function MyApp({ Component, pageProps }) {
           href="/images/favicon-16x16.png"
         />
       </Head>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </>
   );
 }

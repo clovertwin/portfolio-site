@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="animate-slide-up">
+    <header className="animate-slide-up sm:mx-4 md:mx-14">
       <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
         <div className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600">
           <Image
@@ -29,9 +29,7 @@ export default function Header() {
         , in addition to serving as a <i>digital garden</i> where I can grow in
         my understanding of tech.
       </h2>
-      <div className="top-0 pt-5 animate-slide-up">
-        <div className="border-b-2 border-neutral-300"></div>
-      </div>
+      <div className="border-b-2 border-neutral-300 mt-2"></div>
     </header>
   );
 }
