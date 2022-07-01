@@ -16,6 +16,7 @@ export default function PageNav({ setMobileNavOpen }) {
               src="/images/profile-pic.jpg"
               width={300}
               height={300}
+              priority
             />
           </a>
         </Link>
