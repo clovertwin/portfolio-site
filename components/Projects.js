@@ -23,19 +23,19 @@ export default function Projects() {
     >
       <section
         id="projects"
-        className="text-lg mt-20 text-center sm:text-xl sm:mt-40"
+        className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-28"
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
             Some things I&apos;ve built
           </h2>
         </div>
-        <div className="mt-5 text-left text-neutral-500 text-base sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-5">
+        <div className="mt-5 text-left text-neutral-500 text-base sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-5 sm:mt-0">
           <div
             ref={project1Ref}
             className={`${
               project1Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-10`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-5`}
           >
             <h3 className="text-black font-bold text-xl">Chat Application</h3>
             <p className="mt-2">
@@ -89,7 +89,7 @@ export default function Projects() {
             ref={project2Ref}
             className={`${
               project2Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg mt-5 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
           >
             Project 2
           </div>
@@ -97,7 +97,7 @@ export default function Projects() {
             ref={project3Ref}
             className={`${
               project3Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg mt-5 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
           >
             Project 3
           </div>
@@ -105,7 +105,7 @@ export default function Projects() {
             ref={project4Ref}
             className={`${
               project4Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg mt-5 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
           >
             Project 4
           </div>
