@@ -21,7 +21,7 @@ export default function PageNav({ setMobileNavOpen }) {
           </a>
         </Link>
       </div>
-      <div className="font-inter text-slate-400 hidden sm:block">
+      <div className="font-inter text-neutral-500 hidden sm:block">
         <ul className="flex">
           <li className="p-2 mr-2 hover:text-blue-600">
             <Link href="#aboutMe">About</Link>
