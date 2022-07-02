@@ -5,12 +5,21 @@ import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function Projects() {
   const projectsRef = useRef();
-  const isVisible = useSectionVisible(projectsRef);
+  const project1Ref = useRef();
+  const project2Ref = useRef();
+  const project3Ref = useRef();
+  const project4Ref = useRef();
+
+  const projectsVisible = useSectionVisible(projectsRef);
+  const project1Visible = useSectionVisible(project1Ref);
+  const project2Visible = useSectionVisible(project2Ref);
+  const project3Visible = useSectionVisible(project3Ref);
+  const project4Visible = useSectionVisible(project4Ref);
 
   return (
     <div
       ref={projectsRef}
-      className={isVisible ? "animate-slide-up" : "opacity-0"}
+      className={projectsVisible ? "animate-slide-up" : "opacity-0"}
     >
       <section
         id="projects"
@@ -22,7 +31,12 @@ export default function Projects() {
           </h2>
         </div>
         <div className="mt-5 text-left text-neutral-500 text-base sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-5">
-          <div className="bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-10">
+          <div
+            ref={project1Ref}
+            className={`${
+              project1Visible ? "animate-slide-up" : "opacity-0"
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-10`}
+          >
             <h3 className="text-black font-bold text-xl">Chat Application</h3>
             <p className="mt-2">
               Real-time web chat application, built with React, Node, Express,
@@ -71,13 +85,28 @@ export default function Projects() {
               </div>
             </div>
           </div>
-          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+          <div
+            ref={project2Ref}
+            className={`${
+              project2Visible ? "animate-slide-up" : "opacity-0"
+            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+          >
             Project 2
           </div>
-          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+          <div
+            ref={project3Ref}
+            className={`${
+              project3Visible ? "animate-slide-up" : "opacity-0"
+            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+          >
             Project 3
           </div>
-          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+          <div
+            ref={project4Ref}
+            className={`${
+              project4Visible ? "animate-slide-up" : "opacity-0"
+            } bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+          >
             Project 4
           </div>
         </div>
