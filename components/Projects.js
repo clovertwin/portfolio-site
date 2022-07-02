@@ -1,6 +1,5 @@
 import { useRef } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function Projects() {
@@ -44,43 +43,49 @@ export default function Projects() {
             </p>
             <div className="mt-5">
               <div>
-                <Link href="https://github.com/clovertwin/send-it">
-                  <a>
-                    <Image
-                      alt="screenshot of chat application"
-                      src="/images/chat-app.jpg"
-                      width={400}
-                      height={400}
-                    />
-                  </a>
-                </Link>
+                <a
+                  href="https://github.com/clovertwin/send-it"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    alt="screenshot of chat application"
+                    src="/images/chat-app.jpg"
+                    width={400}
+                    height={400}
+                  />
+                </a>
               </div>
               <div className="flex items-center justify-end pr-2 mt-5">
                 <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://github.com/clovertwin/send-it">
-                    <a>
-                      <Image
-                        title="view code"
-                        alt="github badge"
-                        src="/images/github-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://github.com/clovertwin/send-it"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view code"
+                      alt="github badge"
+                      src="/images/github-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
                 <div className="hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://gregarious-phoenix-9b68a5.netlify.app/">
-                    <a>
-                      <Image
-                        title="view live demo"
-                        alt="play symbol"
-                        src="/images/go-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://gregarious-phoenix-9b68a5.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view live demo"
+                      alt="play symbol"
+                      src="/images/go-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -98,43 +103,49 @@ export default function Projects() {
             </p>
             <div className="mt-5">
               <div>
-                <Link href="https://github.com/clovertwin/mac-calculator">
-                  <a>
-                    <Image
-                      alt="screenshot of calculator"
-                      src="/images/calculator-pic.jpg"
-                      width={400}
-                      height={400}
-                    />
-                  </a>
-                </Link>
+                <a
+                  href="https://github.com/clovertwin/mac-calculator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    alt="screenshot of calculator"
+                    src="/images/calculator-pic.jpg"
+                    width={400}
+                    height={400}
+                  />
+                </a>
               </div>
               <div className="flex items-center justify-end pr-2 mt-5">
                 <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://github.com/clovertwin/mac-calculator">
-                    <a>
-                      <Image
-                        title="view code"
-                        alt="github badge"
-                        src="/images/github-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://github.com/clovertwin/mac-calculator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view code"
+                      alt="github badge"
+                      src="/images/github-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
                 <div className="hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://clovertwin.github.io/mac-calculator/">
-                    <a>
-                      <Image
-                        title="view live demo"
-                        alt="play symbol"
-                        src="/images/go-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://clovertwin.github.io/mac-calculator/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view live demo"
+                      alt="play symbol"
+                      src="/images/go-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -147,53 +158,62 @@ export default function Projects() {
           >
             <h3 className="text-black font-bold text-xl">Advice Generator</h3>
             <p className="mt-2">
-              Generate advice using the{" "}
-              <Link href="https://api.adviceslip.com/">
-                <a className="text-blue-600 hover:text-blue-400">
-                  Advice Slip api
-                </a>
-              </Link>
+              Get advice using the{" "}
+              <a
+                href="https://api.adviceslip.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-400"
+              >
+                Advice Slip api
+              </a>
               . Built using Next.js and Styled Components.
             </p>
             <div className="mt-5">
               <div>
-                <Link href="https://github.com/clovertwin/advice-generator">
-                  <a>
-                    <Image
-                      alt="screenshot of advice generator"
-                      src="/images/advice-pic.jpg"
-                      width={400}
-                      height={400}
-                    />
-                  </a>
-                </Link>
+                <a
+                  href="https://github.com/clovertwin/advice-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    alt="screenshot of advice generator"
+                    src="/images/advice-pic.jpg"
+                    width={400}
+                    height={400}
+                  />
+                </a>
               </div>
               <div className="flex items-center justify-end pr-2 mt-5">
                 <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://github.com/clovertwin/advice-generator">
-                    <a>
-                      <Image
-                        title="view code"
-                        alt="github badge"
-                        src="/images/github-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://github.com/clovertwin/advice-generator"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view code"
+                      alt="github badge"
+                      src="/images/github-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
                 <div className="hover:scale-125 transition ease-in-out duration-300">
-                  <Link href="https://advice-generator-ruddy-ten.vercel.app/">
-                    <a>
-                      <Image
-                        title="view live demo"
-                        alt="play symbol"
-                        src="/images/go-badge.svg"
-                        width={20}
-                        height={20}
-                      />
-                    </a>
-                  </Link>
+                  <a
+                    href="https://advice-generator-ruddy-ten.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view live demo"
+                      alt="play symbol"
+                      src="/images/go-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -204,7 +224,65 @@ export default function Projects() {
               project4Visible ? "animate-slide-up" : "opacity-0"
             } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
           >
-            Project 4
+            <h3 className="text-black font-bold text-xl">Pokedex</h3>
+            <p className="mt-2">
+              Fetch and display the first 150 pokemon using the{" "}
+              <a
+                href="https://pokeapi.co/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PokeApi
+              </a>
+            </p>
+            <div className="mt-5">
+              <div>
+                <a
+                  href="https://github.com/clovertwin/pokedex"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    alt="screenshot of pokedex"
+                    src="/images/pokedex-pic.jpg"
+                    width={400}
+                    height={400}
+                  />
+                </a>
+              </div>
+              <div className="flex items-center justify-end pr-2 mt-5">
+                <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
+                  <a
+                    href="https://github.com/clovertwin/pokedex"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view code"
+                      alt="github badge"
+                      src="/images/github-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
+                </div>
+                <div className="hover:scale-125 transition ease-in-out duration-300">
+                  <a
+                    href="https://clovertwin.github.io/pokedex/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      title="view live demo"
+                      alt="play symbol"
+                      src="/images/go-badge.svg"
+                      width={20}
+                      height={20}
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

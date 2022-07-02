@@ -1,8 +1,9 @@
 export default function Footer() {
   return (
-    <footer className="text-center py-14 bg-slate-200">
+    <footer className="text-center py-14 bg-neutral-200">
       <div>
-        <p>Built by Shaun Carr 2022</p>
+        <p>Shaun Carr 2022</p>
+        <p>Built using Next.js, Tailwindcss, and Vercel</p>
       </div>
     </footer>
   );
