@@ -9,7 +9,7 @@ export default function Projects() {
   const project3Ref = useRef();
   const project4Ref = useRef();
 
-  const projectsVisible = useSectionVisible(projectsRef);
+  const projectsVisible = useSectionVisible(projectsRef, 0.05);
   const project1Visible = useSectionVisible(project1Ref);
   const project2Visible = useSectionVisible(project2Ref);
   const project3Visible = useSectionVisible(project3Ref);

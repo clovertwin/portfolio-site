@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
 
-export default function useSectionVisible(ref) {
+export default function useSectionVisible(ref, threshold = 0.2) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const options = {
-      threshold: 0.2,
+      threshold,
     };
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
@@ -17,7 +17,7 @@ export default function useSectionVisible(ref) {
       });
     }, options);
     if (ref.current) observer.observe(ref.current);
-  }, [ref]);
+  }, [ref, threshold]);
 
   return isVisible;
 }
