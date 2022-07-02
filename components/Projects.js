@@ -1,4 +1,6 @@
 import { useRef } from "react";
+import Image from "next/image";
+import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function Projects() {
@@ -16,11 +18,68 @@ export default function Projects() {
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
-            Projects
+            Some things I&apos;ve built
           </h2>
         </div>
-        <div className="mt-5 p-4 border-2 border-blue-500 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7">
-          <p>projects will go here :)</p>
+        <div className="mt-5 text-left text-neutral-500 text-base sm:grid sm:grid-cols-2 sm:grid-rows-2 sm:gap-5">
+          <div className="bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-10">
+            <h3 className="text-black font-bold text-xl">Chat Application</h3>
+            <p className="mt-2">
+              Real-time web chat application, built with React, Node, Express,
+              and Socket.io
+            </p>
+            <div className="mt-5">
+              <div>
+                <Link href="https://github.com/clovertwin/send-it">
+                  <a>
+                    <Image
+                      alt="screenshot of chat application"
+                      src="/images/chat-app.jpg"
+                      width={400}
+                      height={400}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="flex items-center justify-end pr-2 mt-5">
+                <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
+                  <Link href="https://github.com/clovertwin/send-it">
+                    <a>
+                      <Image
+                        title="view code"
+                        alt="github badge"
+                        src="/images/github-badge.svg"
+                        width={20}
+                        height={20}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hover:scale-125 transition ease-in-out duration-300">
+                  <Link href="https://gregarious-phoenix-9b68a5.netlify.app/">
+                    <a>
+                      <Image
+                        title="view live demo"
+                        alt="play symbol"
+                        src="/images/go-badge.svg"
+                        width={20}
+                        height={20}
+                      />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+            Project 2
+          </div>
+          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+            Project 3
+          </div>
+          <div className="bg-white rounded-2xl p-4 shadow-lg mt-10 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300">
+            Project 4
+          </div>
         </div>
       </section>
     </div>
