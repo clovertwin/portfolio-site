@@ -89,9 +89,55 @@ export default function Projects() {
             ref={project2Ref}
             className={`${
               project2Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg mt-5 border-2 border-white hover:border-blue-600 hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
           >
-            Project 2
+            <h3 className="text-black font-bold text-xl">Mac Calculator</h3>
+            <p className="mt-2">
+              Clone of the desktop Mac Calculator built with Vanilla Javascript
+              and CSS.
+            </p>
+            <div className="mt-5">
+              <div>
+                <Link href="https://github.com/clovertwin/mac-calculator">
+                  <a>
+                    <Image
+                      alt="screenshot of calculator"
+                      src="/images/calculator-pic.jpg"
+                      width={400}
+                      height={400}
+                    />
+                  </a>
+                </Link>
+              </div>
+              <div className="flex items-center justify-end pr-2 mt-5">
+                <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
+                  <Link href="https://github.com/clovertwin/mac-calculator">
+                    <a>
+                      <Image
+                        title="view code"
+                        alt="github badge"
+                        src="/images/github-badge.svg"
+                        width={20}
+                        height={20}
+                      />
+                    </a>
+                  </Link>
+                </div>
+                <div className="hover:scale-125 transition ease-in-out duration-300">
+                  <Link href="https://clovertwin.github.io/mac-calculator/">
+                    <a>
+                      <Image
+                        title="view live demo"
+                        alt="play symbol"
+                        src="/images/go-badge.svg"
+                        width={20}
+                        height={20}
+                      />
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
           </div>
           <div
             ref={project3Ref}
