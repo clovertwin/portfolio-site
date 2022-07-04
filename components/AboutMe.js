@@ -19,7 +19,7 @@ export default function AboutMe() {
             A little about myself
           </h2>
         </div>
-        <div className="mt-5 p-4 border-2 border-blue-500 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7">
+        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7">
           <p>
             Hi! <strong>My name is Shaun</strong>, and my passion is creating
             delightful things that live on the internet. I started teaching
