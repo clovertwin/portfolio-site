@@ -25,7 +25,7 @@ export default function Projects() {
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
       >
         <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope text-slate-800 font-extrabold text-2xl sm:text-3xl">
+          <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl">
             Some things I&apos;ve built
           </h2>
         </div>

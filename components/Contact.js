@@ -38,7 +38,7 @@ export default function Contact() {
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
       >
         <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope text-slate-800 font-extrabold text-2xl sm:text-3xl">
+          <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl">
             Contact
           </h2>
         </div>
@@ -79,7 +79,7 @@ export default function Contact() {
           </div>
           <div className="flex justify-center">
             <input
-              className="block mb-2 px-20 py-2 border-2 border-blue-600 rounded-2xl bg-blue-600 text-white font-bold hover:bg-white hover:text-blue-600 transition ease-in-out duration-300 hover:cursor-pointer"
+              className="block mb-2 px-20 py-2 border-2 border-blue-600 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:border-blue-700 transition ease-in-out duration-300 hover:cursor-pointer"
               type="submit"
               value="Send"
             />

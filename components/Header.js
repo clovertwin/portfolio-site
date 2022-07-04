@@ -14,7 +14,7 @@ export default function Header() {
           />
         </div>
         <div className="mt-5 text-center sm:mt-3 sm:text-left">
-          <h1 className="font-manrope text-slate-800 text-4xl font-extrabold sm:text-5xl">
+          <h1 className="font-manrope tracking-tighter text-slate-800 text-4xl font-extrabold sm:text-5xl">
             Hello I&apos;m Shaun,
             <br />a web developer.
           </h1>
