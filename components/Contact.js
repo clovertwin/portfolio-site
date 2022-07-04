@@ -12,7 +12,7 @@ export default function Contact() {
         "contact_service",
         "contact_form",
         formRef.current,
-        process.env.EMAILJS_API_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_API_KEY
       )
       .then(
         (result) => {
@@ -22,18 +22,21 @@ export default function Contact() {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
 
   return (
-    <form ref={formRef} onSubmit={handleSendEmail}>
-      <input type="hidden" name="contact_number" />
-      <label>Name</label>
-      <input type="text" name="user_name" />
-      <label>Email</label>
-      <input type="email" name="user_email" />
-      <label>Message</label>
-      <textarea name="message" />
-      <input type="submit" value="Send" />
-    </form>
+    <section>
+      <form ref={formRef} onSubmit={handleSendEmail}>
+        <input type="hidden" name="contact_number" />
+        <label>Name</label>
+        <input type="text" name="user_name" />
+        <label>Email</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
+    </section>
   );
 }
