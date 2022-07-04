@@ -12,7 +12,7 @@ export default function AboutMe() {
     >
       <section
         id="aboutMe"
-        className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-40 sm:scroll-m-30"
+        className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-52 sm:scroll-m-30"
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl">
