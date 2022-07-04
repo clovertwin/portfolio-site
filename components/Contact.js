@@ -35,7 +35,7 @@ export default function Contact() {
     >
       <section
         id="contact"
-        className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-28"
+        className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">

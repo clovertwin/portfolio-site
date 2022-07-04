@@ -40,7 +40,7 @@ export default function MobileMenu({ mobileNavOpen, setMobileNavOpen }) {
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#">Contact</Link>
+                <Link href="#contact">Contact</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
