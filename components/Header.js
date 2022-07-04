@@ -14,19 +14,19 @@ export default function Header() {
           />
         </div>
         <div className="mt-5 text-center sm:mt-3 sm:text-left">
-          <h1 className="font-manrope text-3xl font-extrabold sm:text-5xl">
+          <h1 className="font-manrope text-slate-800 text-4xl font-extrabold sm:text-5xl">
             Hello I&apos;m Shaun,
             <br />a web developer.
           </h1>
         </div>
       </div>
-      <h2 className="text-neutral-500 text-lg mt-5 text-center sm:text-xl sm:mt-10 sm:text-left">
+      <h2 className="text-neutral-500 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left">
         <strong>Welcome</strong> to my <i>corner</i> of the internet! 👋{" "}
         <strong>
           This is where I share what I&apos;m working on and learning
         </strong>
         , in addition to serving as a <i>digital garden</i> where I can grow in
-        my understanding of tech.
+        my understanding of tech. 🌱
       </h2>
       <div className="border-b-2 border-neutral-300 mt-2"></div>
     </header>

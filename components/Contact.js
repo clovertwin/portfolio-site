@@ -38,7 +38,7 @@ export default function Contact() {
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
       >
         <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
+          <h2 className="font-manrope text-slate-800 font-extrabold text-2xl sm:text-3xl">
             Contact
           </h2>
         </div>
@@ -50,7 +50,7 @@ export default function Contact() {
           <input type="hidden" name="contact_number" />
           <div className="sm:flex sm:space-x-4 ">
             <div className="sm:w-1/2">
-              <label>Name</label>
+              <label className="text-slate-800">Name</label>
               <input
                 placeholder="Your name"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base focus:outline-none focus:border-blue-600"
@@ -59,7 +59,7 @@ export default function Contact() {
               />
             </div>
             <div className="mt-6 sm:mt-0 sm:w-1/2">
-              <label>Email</label>
+              <label className="text-slate-800">Email</label>
               <input
                 placeholder="email@email.com"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-base text-neutral-500 focus:outline-none focus:border-blue-600"
@@ -69,7 +69,7 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label>Message</label>
+            <label className="text-slate-800">Message</label>
             <textarea
               placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
               rows="4"

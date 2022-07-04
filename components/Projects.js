@@ -25,7 +25,7 @@ export default function Projects() {
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
       >
         <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
+          <h2 className="font-manrope text-slate-800 font-extrabold text-2xl sm:text-3xl">
             Some things I&apos;ve built
           </h2>
         </div>
@@ -34,9 +34,11 @@ export default function Projects() {
             ref={project1Ref}
             className={`${
               project1Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-5`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 sm:mt-5`}
           >
-            <h3 className="text-black font-bold text-xl">Chat Application</h3>
+            <h3 className="text-slate-800 font-bold text-xl">
+              Chat Application
+            </h3>
             <p className="mt-2">
               Real-time chat application built with React, Node, Express, and
               Socket.io
@@ -94,9 +96,9 @@ export default function Projects() {
             ref={project2Ref}
             className={`${
               project2Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
           >
-            <h3 className="text-black font-bold text-xl">Mac Calculator</h3>
+            <h3 className="text-slate-800 font-bold text-xl">Mac Calculator</h3>
             <p className="mt-2">
               Clone of the desktop Mac Calculator built with Vanilla Javascript
               and CSS.
@@ -154,9 +156,11 @@ export default function Projects() {
             ref={project3Ref}
             className={`${
               project3Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
           >
-            <h3 className="text-black font-bold text-xl">Advice Generator</h3>
+            <h3 className="text-slate-800 font-bold text-xl">
+              Advice Generator
+            </h3>
             <p className="mt-2">
               Get advice using the{" "}
               <a
@@ -222,9 +226,9 @@ export default function Projects() {
             ref={project4Ref}
             className={`${
               project4Visible ? "animate-slide-up" : "opacity-0"
-            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:grayscale sm:hover:grayscale-0 sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
+            } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 mt-5 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300`}
           >
-            <h3 className="text-black font-bold text-xl">Pokedex</h3>
+            <h3 className="text-slate-800 font-bold text-xl">Pokedex</h3>
             <p className="mt-2">
               Fetch and display the first 150 pokemon using the{" "}
               <a

@@ -15,7 +15,7 @@ export default function AboutMe() {
         className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-40 sm:scroll-m-32"
       >
         <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope text-black font-bold text-2xl sm:text-3xl">
+          <h2 className="font-manrope text-slate-800 font-extrabold text-2xl sm:text-3xl">
             A little about myself
           </h2>
         </div>
