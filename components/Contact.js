@@ -6,6 +6,22 @@ export default function Contact() {
 
   const handleSendEmail = (e) => {
     e.preventDefault();
+    formRef.current.contact_number.value = (Math.random() * 100000) | 0;
+    emailjs
+      .sendForm(
+        "contact_service",
+        "contact_form",
+        formRef.current,
+        process.env.EMAILJS_API_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
