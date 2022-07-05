@@ -44,7 +44,7 @@ export default function Projects() {
               Socket.io
             </p>
             <div className="mt-5">
-              <div>
+              <div className="flex justify-center">
                 <a
                   href="https://github.com/clovertwin/send-it"
                   target="_blank"
@@ -104,7 +104,7 @@ export default function Projects() {
               and CSS.
             </p>
             <div className="mt-5">
-              <div>
+              <div className="flex justify-center">
                 <a
                   href="https://github.com/clovertwin/mac-calculator"
                   target="_blank"
@@ -174,7 +174,7 @@ export default function Projects() {
               . Built using Next.js and Styled Components.
             </p>
             <div className="mt-5">
-              <div>
+              <div className="flex justify-center">
                 <a
                   href="https://github.com/clovertwin/advice-generator"
                   target="_blank"
@@ -240,7 +240,7 @@ export default function Projects() {
               </a>
             </p>
             <div className="mt-5">
-              <div>
+              <div className="flex justify-center">
                 <a
                   href="https://github.com/clovertwin/pokedex"
                   target="_blank"
