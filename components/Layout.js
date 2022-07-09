@@ -27,10 +27,12 @@ export default function Layout({ children }) {
         setMobileNavOpen={setMobileNavOpen}
       />
       <PageNav setMobileNavOpen={setMobileNavOpen} />
-      <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-md sm:pt-40">
-        {children}
-      </main>
-      <Footer />
+      <div className="flex flex-col justify-between min-h-screen">
+        <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-md sm:pt-40">
+          {children}
+        </main>
+        <Footer />
+      </div>
     </div>
   );
 }

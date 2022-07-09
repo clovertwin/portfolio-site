@@ -9,7 +9,7 @@ export default function PageNav({ setMobileNavOpen }) {
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md shadow-neutral-900/5 sm:px-14">
       <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 hover:cursor-pointer">
-        <Link href="#">
+        <Link href="/">
           <a>
             <Image
               alt="photo of me"
