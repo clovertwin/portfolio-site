@@ -22,31 +22,31 @@ export default function MobileMenu({ mobileNavOpen, setMobileNavOpen }) {
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#">Home</Link>
+                <Link href="/">Home</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#aboutMe">About</Link>
+                <Link href="/#aboutMe">About</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#projects">Projects</Link>
+                <Link href="/#projects">Projects</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#">Blog</Link>
+                <Link href="/blog">Blog</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
                 className="pt-6 hover:text-blue-600"
               >
-                <Link href="#contact">Contact</Link>
+                <Link href="/#contact">Contact</Link>
               </li>
               <li
                 onClick={handleCloseMenu}
