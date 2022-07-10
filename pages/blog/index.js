@@ -10,19 +10,21 @@ export default function PostListPage({ posts }) {
     <div>
       <div className="border-b-4 border-blue-600 inline-block mb-10">
         <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl">
-          Blog
+          Blog posts
         </h1>
       </div>
       <div className="prose prose-blue">
-        {posts.map((post) => (
-          <div key={post.slug}>
-            <h2>
-              <Link href={`/blog/${post.slug}`}>
-                <a>{post.title}</a>
-              </Link>
-            </h2>
-          </div>
-        ))}
+        <ul>
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <h2>
+                <Link href={`/blog/${post.slug}`}>
+                  <a>{post.title}</a>
+                </Link>
+              </h2>
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );
