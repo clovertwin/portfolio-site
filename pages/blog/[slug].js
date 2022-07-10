@@ -23,9 +23,15 @@ export const getStaticProps = ({ params }) => {
 export default function SinglePostPage({ post }) {
   const MDXContent = useMDXComponent(post.body.code);
   return (
-    <div className="prose">
-      <h1>{post.title}</h1>
-      <MDXContent />
-    </div>
+    <>
+      <div className="border-b-4 border-blue-600 inline-block mb-20">
+        <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl">
+          {post.title}
+        </h1>
+      </div>
+      <div className="prose prose-neutral sm:prose-lg">
+        <MDXContent />
+      </div>
+    </>
   );
 }
