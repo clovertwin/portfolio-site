@@ -15,7 +15,7 @@ export default function Blog({ posts }) {
     >
       <section
         id="blog"
-        className="text-lg mt-20 text-center sm:text-xl sm:mt-40"
+        className="text-lg mt-20 text-center scroll-m-24 sm:text-xl sm:mt-40"
       >
         <div className="border-b-4 border-blue-600 inline-block">
           <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl">
@@ -30,7 +30,9 @@ export default function Blog({ posts }) {
           <p className="mt-5">
             You can see all posts{" "}
             <Link href="/blog">
-              <a className="text-blue-600 hover:text-blue-400">here</a>
+              <a className="underline underline-offset-1 text-blue-600 hover:text-blue-400">
+                here
+              </a>
             </Link>
             , or check out some of my recent posts:
           </p>
@@ -39,6 +41,7 @@ export default function Blog({ posts }) {
               <li key={post.slug} className="mt-5">
                 <Link href={`/blog/${post.slug}`}>
                   <a className="text-blue-600 hover:text-blue-400">
+                    {"-"}
                     {post.title}
                   </a>
                 </Link>

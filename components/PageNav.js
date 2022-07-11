@@ -30,7 +30,7 @@ export default function PageNav({ setMobileNavOpen }) {
             <Link href="/#projects">Projects</Link>
           </li>
           <li className="p-2 mr-2 hover:text-blue-600">
-            <Link href="/blog">Blog</Link>
+            <Link href="/#blog">Blog</Link>
           </li>
           <li className="p-2 mr-2 hover:text-blue-600">
             <Link href="/#contact">Contact</Link>
