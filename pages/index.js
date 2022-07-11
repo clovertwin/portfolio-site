@@ -5,9 +5,9 @@ import Projects from "../components/Projects";
 import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
   return { props: { posts: allPosts } };
-};
+}
 
 export default function Home({ posts }) {
   return (

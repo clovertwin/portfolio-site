@@ -2,7 +2,7 @@ import Link from "next/link";
 import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
-export const getStaticPaths = () => {
+export async function getStaticPaths() {
   return {
     paths: allPosts.map((post) => ({
       params: {
@@ -11,15 +11,15 @@ export const getStaticPaths = () => {
     })),
     fallback: false,
   };
-};
+}
 
-export const getStaticProps = ({ params }) => {
+export async function getStaticProps({ params }) {
   return {
     props: {
       post: allPosts.find((post) => post.slug === params?.slug),
     },
   };
-};
+}
 
 export default function SinglePostPage({ post }) {
   const MDXContent = useMDXComponent(post.body.code);

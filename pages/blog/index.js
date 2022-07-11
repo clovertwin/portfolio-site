@@ -1,9 +1,9 @@
 import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
 
-export const getStaticProps = () => {
+export async function getStaticProps() {
   return { props: { posts: allPosts } };
-};
+}
 
 export default function PostListPage({ posts }) {
   return (
