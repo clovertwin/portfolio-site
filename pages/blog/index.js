@@ -19,21 +19,25 @@ export default function PostListPage({ posts }) {
           </h1>
         </div>
       </div>
-      <div className="prose prose-blue text-lg sm:text-xl ">
+      <div className="text-lg sm:text-xl ">
         <ul>
           {posts.map((post) => (
-            <li key={post.slug} className="mt-5">
-              <div className="flex justify-start items-center">
-                <time dateTime={post.date} className="text-slate-800 mr-5">
-                  {format(parseISO(post.date), "LLLL d, yyyy")}
-                </time>
-                <p className="mr-5">{post.description}</p>
-                <Link href={`/blog/${post.slug}`}>
-                  <a className="text-blue-600 hover:text-blue-400">
-                    read more...
-                  </a>
-                </Link>
-              </div>
+            <li
+              key={post.slug}
+              className="mt-5 pl-4 flex flex-col justify-start sm:flex-row sm:pl-0"
+            >
+              <time
+                dateTime={post.date}
+                className="text-slate-800 mr-5 before:content-['-']"
+              >
+                {format(parseISO(post.date), "LLLL d, yyyy")}
+              </time>
+              <p className="mr-5 text-neutral-500">{post.description}</p>
+              <Link href={`/blog/${post.slug}`}>
+                <a className="text-blue-600 hover:text-blue-400">
+                  read more...
+                </a>
+              </Link>
             </li>
           ))}
         </ul>

@@ -38,9 +38,11 @@ export default function Blog({ posts }) {
           <ul>
             {posts.map((post) => (
               <li key={post.slug} className="mt-5">
-                <div className="flex justify-start">
-                  {"-"}
-                  <time dateTime={post.date} className="text-slate-800 mr-5">
+                <div className="flex flex-col justify-start sm:flex-row">
+                  <time
+                    dateTime={post.date}
+                    className="text-slate-800 mr-5 before:content-['-']"
+                  >
                     {format(parseISO(post.date), "LLLL d, yyyy")}
                   </time>
                   <p className="mr-5">{post.description}</p>
