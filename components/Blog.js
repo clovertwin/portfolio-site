@@ -33,7 +33,7 @@ export default function Blog({ posts }) {
                 here
               </a>
             </Link>
-            , or check out some of my recent posts:
+            , or check out some of my recent ones below.
           </p>
           <ul>
             {posts.map((post) => (
