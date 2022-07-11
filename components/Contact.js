@@ -1,14 +1,22 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import useSectionVisible from "../hooks/useSectionVisible";
 
 export default function Contact() {
+  const [userName, setUserName] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userMessage, setUserMessage] = useState("");
   const formRef = useRef();
   const contactRef = useRef();
   const isContactVisible = useSectionVisible(contactRef);
 
   const handleSendEmail = (e) => {
     e.preventDefault();
+    if (
+      !(userName.length > 0 && userEmail.length > 0 && userMessage.length > 0)
+    ) {
+      return;
+    }
     formRef.current.contact_number.value = (Math.random() * 100000) | 0;
     emailjs
       .sendForm(
@@ -52,6 +60,7 @@ export default function Contact() {
             <div className="sm:w-1/2">
               <label className="text-slate-800">Name</label>
               <input
+                onChange={(e) => setUserName(e.target.value)}
                 placeholder="Your name"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base focus:outline-none focus:border-blue-600"
                 type="text"
@@ -61,6 +70,7 @@ export default function Contact() {
             <div className="mt-6 sm:mt-0 sm:w-1/2">
               <label className="text-slate-800">Email</label>
               <input
+                onChange={(e) => setUserEmail(e.target.value)}
                 placeholder="email@email.com"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-base text-neutral-500 focus:outline-none focus:border-blue-600"
                 type="email"
@@ -71,6 +81,7 @@ export default function Contact() {
           <div>
             <label className="text-slate-800">Message</label>
             <textarea
+              onChange={(e) => setUserMessage(e.target.value)}
               placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
               rows="4"
               className="border-2 border-blue-400 rounded-md block py-2 px-4 text-base text-neutral-500 w-full focus:outline-none focus:border-blue-600"
