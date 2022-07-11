@@ -1,3 +1,4 @@
+import { format, parseISO } from "date-fns";
 import { useRef } from "react";
 import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
@@ -5,8 +6,6 @@ import useSectionVisible from "../hooks/useSectionVisible";
 export default function Blog({ posts }) {
   const blogRef = useRef();
   const isBlogVisible = useSectionVisible(blogRef);
-
-  const lastThreePosts = posts.slice(-3);
 
   return (
     <div
@@ -28,7 +27,7 @@ export default function Blog({ posts }) {
             working on and new exciting things I come across.
           </h3>
           <p className="mt-5">
-            You can see all posts{" "}
+            You can see all of my posts{" "}
             <Link href="/blog">
               <a className="underline underline-offset-1 text-blue-600 hover:text-blue-400">
                 here
@@ -37,14 +36,20 @@ export default function Blog({ posts }) {
             , or check out some of my recent posts:
           </p>
           <ul>
-            {lastThreePosts.map((post) => (
+            {posts.map((post) => (
               <li key={post.slug} className="mt-5">
-                <Link href={`/blog/${post.slug}`}>
-                  <a className="text-blue-600 hover:text-blue-400">
-                    {"-"}
-                    {post.title}
-                  </a>
-                </Link>
+                <div className="flex justify-start">
+                  {"-"}
+                  <time dateTime={post.date} className="text-slate-800 mr-5">
+                    {format(parseISO(post.date), "LLLL d, yyyy")}
+                  </time>
+                  <p className="mr-5">{post.description}</p>
+                  <Link href={`/blog/${post.slug}`}>
+                    <a className="text-blue-600 hover:text-blue-400">
+                      read more...
+                    </a>
+                  </Link>
+                </div>
               </li>
             ))}
           </ul>

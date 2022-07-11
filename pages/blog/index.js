@@ -1,8 +1,12 @@
+import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  return { props: { posts: allPosts } };
+  const posts = allPosts.sort((a, b) =>
+    compareDesc(new Date(a.date), new Date(b.date))
+  );
+  return { props: { posts } };
 }
 
 export default function PostListPage({ posts }) {
@@ -15,15 +19,21 @@ export default function PostListPage({ posts }) {
           </h1>
         </div>
       </div>
-      <div className="prose prose-blue">
+      <div className="prose prose-blue text-lg sm:text-xl ">
         <ul>
           {posts.map((post) => (
-            <li key={post.slug}>
-              <h2>
+            <li key={post.slug} className="mt-5">
+              <div className="flex justify-start items-center">
+                <time dateTime={post.date} className="text-slate-800 mr-5">
+                  {format(parseISO(post.date), "LLLL d, yyyy")}
+                </time>
+                <p className="mr-5">{post.description}</p>
                 <Link href={`/blog/${post.slug}`}>
-                  <a>{post.title}</a>
+                  <a className="text-blue-600 hover:text-blue-400">
+                    read more...
+                  </a>
                 </Link>
-              </h2>
+              </div>
             </li>
           ))}
         </ul>
