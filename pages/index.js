@@ -2,7 +2,7 @@ import { allPosts } from "contentlayer/generated";
 import Header from "../components/Header";
 import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
-import Blog from "../components/blog";
+import Blog from "../components/Blog";
 import Contact from "../components/Contact";
 
 export const getStaticProps = () => {
