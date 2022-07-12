@@ -23,7 +23,7 @@ export default function AboutMe() {
           <p>
             Hi! <strong>My name is Shaun</strong>, and my passion is creating
             delightful things that live on the internet. I started teaching
-            myself web development in 2020 as a hobby, but the more I learned,
+            myself web development in 2021 as a hobby, but the more I learned,
             the more I was hooked.
           </p>
           <br />

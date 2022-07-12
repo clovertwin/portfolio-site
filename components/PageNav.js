@@ -23,16 +23,16 @@ export default function PageNav({ setMobileNavOpen }) {
       </div>
       <div className="font-inter text-neutral-500 hidden sm:block">
         <ul className="flex">
-          <li className="p-2 mr-2 hover:text-blue-600">
+          <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#aboutMe">About</Link>
           </li>
-          <li className="p-2 mr-2 hover:text-blue-600">
+          <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li className="p-2 mr-2 hover:text-blue-600">
+          <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#blog">Blog</Link>
           </li>
-          <li className="p-2 mr-2 hover:text-blue-600">
+          <li className="p-2 hover:text-blue-600">
             <Link href="/#contact">Contact</Link>
           </li>
         </ul>

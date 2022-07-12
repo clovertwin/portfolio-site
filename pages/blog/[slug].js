@@ -37,7 +37,7 @@ export default function SinglePostPage({ post }) {
           </h1>
         </div>
       </div>
-      <div className="prose prose-neutral sm:prose-lg">
+      <div className="prose prose-neutral prose-lg sm:prose-xl">
         <MDXContent />
       </div>
     </>
