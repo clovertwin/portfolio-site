@@ -6,34 +6,45 @@ export default function Contact() {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
+  const [buttonValue, setButtonValue] = useState("Send");
   const formRef = useRef();
   const contactRef = useRef();
   const isContactVisible = useSectionVisible(contactRef);
 
   const handleSendEmail = (e) => {
     e.preventDefault();
-    if (
-      !(userName.length > 0 && userEmail.length > 0 && userMessage.length > 0)
-    ) {
+    if (userName.length > 0 && userEmail.length > 0 && userMessage.length > 0) {
+      setButtonValue("Sending..");
+      formRef.current.contact_number.value = (Math.random() * 100000) | 0;
+      emailjs
+        .sendForm(
+          "contact_service",
+          "contact_form",
+          formRef.current,
+          process.env.NEXT_PUBLIC_EMAILJS_API_KEY
+        )
+        .then(
+          (result) => {
+            console.log(result);
+            setButtonValue("Email Sent!");
+            setTimeout(() => {
+              setButtonValue("Send");
+            }, 5000);
+          },
+          (error) => {
+            console.log(error.text);
+            setButtonValue("Error Sending");
+            setTimeout(() => {
+              setButtonValue("Send");
+            }, 5000);
+          }
+        );
+      setUserName("");
+      setUserEmail("");
+      setUserMessage("");
+    } else {
       return;
     }
-    formRef.current.contact_number.value = (Math.random() * 100000) | 0;
-    emailjs
-      .sendForm(
-        "contact_service",
-        "contact_form",
-        formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_API_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
   };
 
   return (
@@ -61,6 +72,7 @@ export default function Contact() {
               <label className="text-slate-800">Name</label>
               <input
                 onChange={(e) => setUserName(e.target.value)}
+                value={userName}
                 placeholder="Your name"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base focus:outline-none focus:border-blue-600"
                 type="text"
@@ -70,6 +82,7 @@ export default function Contact() {
             <div className="mt-6 sm:mt-0 sm:w-1/2">
               <label className="text-slate-800">Email</label>
               <input
+                value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}
                 placeholder="email@email.com"
                 className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-base text-neutral-500 focus:outline-none focus:border-blue-600"
@@ -81,6 +94,7 @@ export default function Contact() {
           <div>
             <label className="text-slate-800">Message</label>
             <textarea
+              value={userMessage}
               onChange={(e) => setUserMessage(e.target.value)}
               placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
               rows="4"
@@ -92,7 +106,7 @@ export default function Contact() {
             <input
               className="block mb-2 px-20 py-2 border-2 border-blue-600 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:border-blue-700 transition ease-in-out duration-300 hover:cursor-pointer"
               type="submit"
-              value="Send"
+              value={buttonValue}
             />
           </div>
         </form>
