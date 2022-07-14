@@ -165,7 +165,12 @@ export const projects = [
     description: (
       <>
         Fetch and display the first 150 pokemon using the{" "}
-        <a href="https://pokeapi.co/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://pokeapi.co/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-blue-600 hover:text-blue-400"
+        >
           PokeApi
         </a>
       </>
