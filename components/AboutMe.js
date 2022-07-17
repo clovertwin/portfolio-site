@@ -14,7 +14,7 @@ export default function AboutMe() {
         id="aboutMe"
         className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-52 sm:scroll-m-30"
       >
-        <div className="border-b-4 border-blue-600 inline-block dark:border-sky-500">
+        <div className="border-b-4 border-blue-600 inline-block transition ease-in-out duration-300 dark:border-sky-500">
           <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl dark:text-neutral-50">
             A little about myself
           </h2>

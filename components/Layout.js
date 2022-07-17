@@ -15,7 +15,7 @@ export default function Layout({ children }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-neutral-50 selection:bg-blue-600/90 selection:text-white dark:bg-zinc-800 dark:selection:bg-sky-500/90">
+    <div className="min-h-screen bg-neutral-50 selection:bg-blue-600/90 selection:text-white transition ease-in-out duration-300 dark:bg-zinc-800 dark:selection:bg-sky-500/90">
       <div
         role="complementary"
         className="hidden absolute lg:block lg:right-[10%] lg:top-28 lg:fixed lg:animate-spin-slow xl:right-[15%]"
