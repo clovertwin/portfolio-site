@@ -62,7 +62,7 @@ export default function Contact() {
           </h2>
         </div>
         <form
-          className="text-left mt-5 p-4 rounded-2xl border-2 border-blue-600 bg-gray-200 shadow-lg space-y-6 dark:border-sky-500 dark:bg-neutral-700 dark:shadow-sky-500"
+          className="text-left mt-5 p-4 rounded-2xl border-2 border-blue-600 bg-gray-200 shadow-lg space-y-6 dark:border-sky-500 dark:bg-neutral-700"
           ref={formRef}
           onSubmit={handleSendEmail}
         >

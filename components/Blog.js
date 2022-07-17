@@ -21,7 +21,7 @@ export default function Blog({ posts }) {
             Blog posts
           </h2>
         </div>
-        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7 dark:border-sky-500 dark:bg-neutral-700 dark:text-neutral-50 dark:shadow-sky-500">
+        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7 dark:border-sky-500 dark:bg-neutral-700 dark:text-neutral-50">
           <h3 className="text-slate-800 font-bold text-xl dark:text-neutral-50">
             This is my personal tech blog, where I write about projects I&apos;m
             working on and new exciting things I come across.

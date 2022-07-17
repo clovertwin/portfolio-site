@@ -18,7 +18,7 @@ export default function Project({
       ref={projectRef}
       className={`${projectVisible ? "animate-slide-up" : "opacity-0"} ${
         isFirst ? "sm:mt-5" : "mt-5"
-      } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 dark:bg-neutral-700 dark:border-sky-500 dark:sm:border-neutral-700 dark:sm:hover:border-sky-500 dark:shadow-sky-500`}
+      } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 dark:bg-neutral-700 dark:border-sky-500 dark:hover:border-sky-500`}
     >
       <h3 className="text-slate-800 font-bold text-xl dark:text-neutral-50">
         {projectTitle}

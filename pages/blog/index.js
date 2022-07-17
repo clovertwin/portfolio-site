@@ -13,8 +13,8 @@ export default function PostListPage({ posts }) {
   return (
     <div>
       <div className="text-center">
-        <div className="border-b-4 border-blue-600 inline-block mb-5 sm:mb-10">
-          <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl">
+        <div className="border-b-4 border-blue-600 inline-block mb-5 sm:mb-10 dark:border-sky-500">
+          <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl dark:text-neutral-50">
             Blog posts
           </h1>
         </div>
@@ -28,13 +28,15 @@ export default function PostListPage({ posts }) {
             >
               <time
                 dateTime={post.date}
-                className="text-slate-800 mr-5 before:content-['-']"
+                className="text-slate-800 mr-5 before:content-['-'] dark:text-neutral-50"
               >
                 {format(parseISO(post.date), "LLLL d, yyyy")}
               </time>
-              <p className="mr-5 text-neutral-500">{post.description}</p>
+              <p className="mr-5 text-neutral-500 dark:text-neutral-50">
+                {post.description}
+              </p>
               <Link href={`/blog/${post.slug}`}>
-                <a className="text-blue-600 hover:text-blue-400">
+                <a className="text-blue-600 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
                   read more...
                 </a>
               </Link>
