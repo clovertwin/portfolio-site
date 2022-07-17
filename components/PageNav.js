@@ -1,5 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import DarkIcon from "./DarkIcon";
+import LightIcon from "./LightIcon";
+import MenuIcon from "./MenuIcon";
 
 export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
   const handleOpenMenu = () => {
@@ -35,56 +38,33 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
           <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#contact">Contact</Link>
           </li>
-          <li className="px-2 pt-2">
+          <li>
             {theme === "dark" ? (
-              <Image
-                onClick={() => setTheme("light")}
-                alt="icon"
-                src="/images/blue-moon.svg"
-                width={20}
-                height={20}
-              />
+              <div onClick={() => setTheme("light")}>
+                <DarkIcon />
+              </div>
             ) : (
-              <Image
-                onClick={() => setTheme("dark")}
-                alt="icon"
-                src="/images/blue-sun.svg"
-                width={20}
-                height={20}
-              />
+              <div onClick={() => setTheme("dark")}>
+                <LightIcon />
+              </div>
             )}
           </li>
         </ul>
       </div>
       <div className="sm:hidden pb-1 flex items-center">
         {theme === "dark" ? (
-          <div className="pt-3 mr-5">
-            <Image
-              onClick={() => setTheme("light")}
-              alt="icon"
-              src="/images/blue-moon.svg"
-              width={25}
-              height={25}
-            />
+          <div className="mr-5" onClick={() => setTheme("light")}>
+            <DarkIcon />
           </div>
         ) : (
-          <div className="pt-3 mr-5">
-            <Image
-              onClick={() => setTheme("dark")}
-              alt="icon"
-              src="/images/blue-sun.svg"
-              width={25}
-              height={25}
-            />
+          <div className="mr-5" onClick={() => setTheme("dark")}>
+            <LightIcon />
           </div>
         )}
         <div>
-          <button
-            onClick={handleOpenMenu}
-            className="h-[30px] w-[30px] text-3xl text-blue-600"
-          >
-            &#9776;
-          </button>
+          <div onClick={handleOpenMenu}>
+            <MenuIcon />
+          </div>
         </div>
       </div>
     </header>
