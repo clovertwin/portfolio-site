@@ -1,4 +1,4 @@
-export default function DarkIcon(props) {
+export default function DarkIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

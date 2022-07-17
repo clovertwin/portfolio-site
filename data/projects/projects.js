@@ -1,4 +1,6 @@
 import Image from "next/image";
+import CodeIcon from "../../components/CodeIcon";
+import LiveDemoIcon from "../../components/LiveDemoIcon";
 
 export const projects = [
   {
@@ -25,13 +27,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view code"
-          alt="github badge"
-          src="/images/github-badge.svg"
-          width={20}
-          height={20}
-        />
+        <CodeIcon />
       </a>
     ),
     liveDemo: (
@@ -40,13 +36,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view live demo"
-          alt="play symbol"
-          src="/images/go-badge.svg"
-          width={20}
-          height={20}
-        />
+        <LiveDemoIcon />
       </a>
     ),
   },
@@ -74,13 +64,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view code"
-          alt="github badge"
-          src="/images/github-badge.svg"
-          width={20}
-          height={20}
-        />
+        <CodeIcon />
       </a>
     ),
     liveDemo: (
@@ -89,13 +73,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view live demo"
-          alt="play symbol"
-          src="/images/go-badge.svg"
-          width={20}
-          height={20}
-        />
+        <LiveDemoIcon />
       </a>
     ),
   },
@@ -135,13 +113,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view code"
-          alt="github badge"
-          src="/images/github-badge.svg"
-          width={20}
-          height={20}
-        />
+        <CodeIcon />
       </a>
     ),
     liveDemo: (
@@ -150,13 +122,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view live demo"
-          alt="play symbol"
-          src="/images/go-badge.svg"
-          width={20}
-          height={20}
-        />
+        <LiveDemoIcon />
       </a>
     ),
   },
@@ -195,13 +161,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view code"
-          alt="github badge"
-          src="/images/github-badge.svg"
-          width={20}
-          height={20}
-        />
+        <CodeIcon />
       </a>
     ),
     liveDemo: (
@@ -210,13 +170,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <Image
-          title="view live demo"
-          alt="play symbol"
-          src="/images/go-badge.svg"
-          width={20}
-          height={20}
-        />
+        <LiveDemoIcon />
       </a>
     ),
   },
