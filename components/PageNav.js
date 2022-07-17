@@ -63,8 +63,8 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
               onClick={() => setTheme("light")}
               alt="icon"
               src="/images/blue-moon.svg"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
             />
           </div>
         ) : (
@@ -73,8 +73,8 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
               onClick={() => setTheme("dark")}
               alt="icon"
               src="/images/blue-sun.svg"
-              width={20}
-              height={20}
+              width={25}
+              height={25}
             />
           </div>
         )}
