@@ -74,7 +74,7 @@ export default function Contact() {
                 onChange={(e) => setUserName(e.target.value)}
                 value={userName}
                 placeholder="Your name"
-                className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base focus:outline-none focus:border-blue-600"
+                className="border-2 border-blue-400 bg-white rounded-md w-full block py-2 px-4 text-neutral-500 text-base focus:outline-none focus:border-blue-600"
                 type="text"
                 name="user_name"
               />
@@ -85,7 +85,7 @@ export default function Contact() {
                 value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}
                 placeholder="email@email.com"
-                className="border-2 border-blue-400 rounded-md w-full block py-2 px-4 text-base text-neutral-500 focus:outline-none focus:border-blue-600"
+                className="border-2 border-blue-400 bg-white rounded-md w-full block py-2 px-4 text-base text-neutral-500 focus:outline-none focus:border-blue-600"
                 type="email"
                 name="user_email"
               />
@@ -98,7 +98,7 @@ export default function Contact() {
               onChange={(e) => setUserMessage(e.target.value)}
               placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
               rows="4"
-              className="border-2 border-blue-400 rounded-md block py-2 px-4 text-base text-neutral-500 w-full focus:outline-none focus:border-blue-600"
+              className="border-2 border-blue-400 bg-white rounded-md block py-2 px-4 text-base text-neutral-500 w-full focus:outline-none focus:border-blue-600"
               name="message"
             />
           </div>
