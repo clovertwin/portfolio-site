@@ -48,11 +48,17 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
           </li>
           <li>
             {theme === "dark" ? (
-              <div onClick={() => setTheme("light")}>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => setTheme("light")}
+              >
                 <DarkIcon />
               </div>
             ) : (
-              <div onClick={() => setTheme("dark")}>
+              <div
+                className="hover:cursor-pointer"
+                onClick={() => setTheme("dark")}
+              >
                 <LightIcon />
               </div>
             )}
