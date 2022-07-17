@@ -14,12 +14,12 @@ export default function AboutMe() {
         id="aboutMe"
         className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-52 sm:scroll-m-30"
       >
-        <div className="border-b-4 border-blue-600 inline-block">
-          <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl">
+        <div className="border-b-4 border-blue-600 inline-block dark:border-sky-500">
+          <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl dark:text-neutral-50">
             A little about myself
           </h2>
         </div>
-        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7">
+        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7 dark:border-sky-500 dark:bg-neutral-700 dark:text-neutral-50 dark:shadow-sky-500">
           <p>
             Hi! <strong>My name is Shaun</strong>, and my passion is creating
             delightful things that live on the internet. I started teaching

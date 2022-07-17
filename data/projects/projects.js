@@ -108,7 +108,7 @@ export const projects = [
           href="https://api.adviceslip.com/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-400"
+          className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
         >
           Advice Slip api
         </a>
@@ -169,7 +169,7 @@ export const projects = [
           href="https://pokeapi.co/"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-blue-600 hover:text-blue-400"
+          className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
         >
           PokeApi
         </a>

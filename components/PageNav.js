@@ -10,8 +10,8 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
   };
 
   return (
-    <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md shadow-neutral-900/5 sm:px-14">
-      <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 hover:cursor-pointer">
+    <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md shadow-neutral-900/5 sm:px-14 dark:bg-zinc-800">
+      <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 hover:cursor-pointer dark:ring-sky-500">
         <Link href="/">
           <a>
             <Image
@@ -24,18 +24,18 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
           </a>
         </Link>
       </div>
-      <div className="font-inter text-neutral-500 hidden sm:block">
+      <div className="font-inter text-neutral-500 hidden sm:block dark:text-neutral-50">
         <ul className="flex items-center">
-          <li className="p-2 mr-5 hover:text-blue-600">
+          <li className="p-2 mr-5 transition ease-in-out duration-300 hover:text-sky-500">
             <Link href="/#aboutMe">About</Link>
           </li>
-          <li className="p-2 mr-5 hover:text-blue-600">
+          <li className="p-2 mr-5 transition ease-in-out duration-300 hover:text-sky-500">
             <Link href="/#projects">Projects</Link>
           </li>
-          <li className="p-2 mr-5 hover:text-blue-600">
+          <li className="p-2 mr-5 transition ease-in-out duration-300 hover:text-sky-500">
             <Link href="/#blog">Blog</Link>
           </li>
-          <li className="p-2 mr-5 hover:text-blue-600">
+          <li className="p-2 mr-5 transition ease-in-out duration-300 hover:text-sky-500">
             <Link href="/#contact">Contact</Link>
           </li>
           <li>
