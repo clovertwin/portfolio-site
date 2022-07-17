@@ -82,7 +82,9 @@ export default function Contact() {
               />
             </div>
             <div className="mt-6 sm:mt-0 sm:w-1/2">
-              <label className="text-slate-800">Email</label>
+              <label className="text-slate-800 dark:text-neutral-50">
+                Email
+              </label>
               <input
                 value={userEmail}
                 onChange={(e) => setUserEmail(e.target.value)}
@@ -94,7 +96,9 @@ export default function Contact() {
             </div>
           </div>
           <div>
-            <label className="text-slate-800">Message</label>
+            <label className="text-slate-800 dark:text-neutral-50">
+              Message
+            </label>
             <textarea
               value={userMessage}
               onChange={(e) => setUserMessage(e.target.value)}
