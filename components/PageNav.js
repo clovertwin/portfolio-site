@@ -58,7 +58,7 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
       </div>
       <div className="sm:hidden pb-1 flex items-center">
         {theme === "dark" ? (
-          <div className="mt-4 mr-5">
+          <div className="pt-3 mr-5">
             <Image
               onClick={() => setTheme("light")}
               alt="icon"
@@ -68,7 +68,7 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
             />
           </div>
         ) : (
-          <div className="mt-4 mr-5">
+          <div className="pt-3 mr-5">
             <Image
               onClick={() => setTheme("dark")}
               alt="icon"
@@ -78,12 +78,14 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
             />
           </div>
         )}
-        <button
-          onClick={handleOpenMenu}
-          className="h-[30px] w-[30px] text-3xl text-blue-600"
-        >
-          &#9776;
-        </button>
+        <div>
+          <button
+            onClick={handleOpenMenu}
+            className="h-[30px] w-[30px] text-3xl text-blue-600"
+          >
+            &#9776;
+          </button>
+        </div>
       </div>
     </header>
   );
