@@ -38,7 +38,7 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
           <li className="px-2 pt-2">
             {theme === "dark" ? (
               <Image
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                onClick={() => setTheme("light")}
                 alt="icon"
                 src="/images/blue-moon.svg"
                 width={20}
@@ -46,7 +46,7 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
               />
             ) : (
               <Image
-                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                onClick={() => setTheme("dark")}
                 alt="icon"
                 src="/images/blue-sun.svg"
                 width={20}
@@ -56,7 +56,28 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
           </li>
         </ul>
       </div>
-      <div className="sm:hidden pb-1">
+      <div className="sm:hidden pb-1 flex items-center">
+        {theme === "dark" ? (
+          <div className="mt-5 mr-5">
+            <Image
+              onClick={() => setTheme("light")}
+              alt="icon"
+              src="/images/blue-moon.svg"
+              width={20}
+              height={20}
+            />
+          </div>
+        ) : (
+          <div className="mt-5 mr-5">
+            <Image
+              onClick={() => setTheme("dark")}
+              alt="icon"
+              src="/images/blue-sun.svg"
+              width={20}
+              height={20}
+            />
+          </div>
+        )}
         <button
           onClick={handleOpenMenu}
           className="h-[30px] w-[30px] text-3xl text-blue-600"
