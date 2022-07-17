@@ -1,3 +1,4 @@
+import { ThemeProvider } from "next-themes";
 import Head from "next/head";
 import Layout from "../components/Layout";
 import "../styles/globals.css";
@@ -26,9 +27,11 @@ function MyApp({ Component, pageProps }) {
           href="/images/favicon-16x16.png"
         />
       </Head>
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <ThemeProvider attribute="class">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
     </>
   );
 }

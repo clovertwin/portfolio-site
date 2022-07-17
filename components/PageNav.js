@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function PageNav({ setMobileNavOpen }) {
+export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
   const handleOpenMenu = () => {
     setMobileNavOpen(true);
   };
@@ -22,7 +22,7 @@ export default function PageNav({ setMobileNavOpen }) {
         </Link>
       </div>
       <div className="font-inter text-neutral-500 hidden sm:block">
-        <ul className="flex">
+        <ul className="flex items-center">
           <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#aboutMe">About</Link>
           </li>
@@ -32,8 +32,27 @@ export default function PageNav({ setMobileNavOpen }) {
           <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#blog">Blog</Link>
           </li>
-          <li className="p-2 hover:text-blue-600">
+          <li className="p-2 mr-5 hover:text-blue-600">
             <Link href="/#contact">Contact</Link>
+          </li>
+          <li className="px-2 pt-2">
+            {theme === "dark" ? (
+              <Image
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                alt="icon"
+                src="/images/blue-moon.svg"
+                width={20}
+                height={20}
+              />
+            ) : (
+              <Image
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                alt="icon"
+                src="/images/blue-sun.svg"
+                width={20}
+                height={20}
+              />
+            )}
           </li>
         </ul>
       </div>
