@@ -1,10 +1,23 @@
+import { useState } from "react";
 import Image from "next/image";
+import ReactTooltip from "react-tooltip";
 
 export default function Header() {
+  const [tooltip, setTooltip] = useState(true);
+
   return (
     <header className="animate-slide-up sm:mx-4 md:mx-14">
       <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
-        <div className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600 transition ease-in-out duration-300 dark:ring-sky-500">
+        <div
+          data-tip
+          data-for="me"
+          onMouseEnter={() => setTooltip(true)}
+          onMouseLeave={() => {
+            setTooltip(false);
+            setTimeout(() => setTooltip(true), 50);
+          }}
+          className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600 transition ease-in-out duration-300 dark:ring-sky-500"
+        >
           <Image
             alt="picture of me"
             src="/images/profile-pic.jpg"
@@ -29,6 +42,11 @@ export default function Header() {
         my understanding of tech. 🌱
       </h2>
       <div className="border-b-2 border-neutral-300 mt-2"></div>
+      {tooltip && (
+        <ReactTooltip id="me">
+          <span>{`hey! (◕‿‿◕)`}</span>
+        </ReactTooltip>
+      )}
     </header>
   );
 }
