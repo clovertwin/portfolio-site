@@ -24,7 +24,7 @@ export default function Layout({ children }) {
         <filter id="delbarocks">
           <feTurbulence
             type="fractalNoise"
-            baseFrequency="0.80"
+            baseFrequency="0.50"
             numOctaves="4"
             stitchTiles="stitch"
           ></feTurbulence>
