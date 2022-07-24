@@ -4,6 +4,7 @@ import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
 import CircleType from "circletype";
 import Footer from "./Footer";
+import Link from "next/link";
 
 export default function Layout({ children }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -11,6 +12,7 @@ export default function Layout({ children }) {
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
+    //73
     new CircleType(circleInstance.current).radius(73);
   }, []);
 
@@ -40,7 +42,7 @@ export default function Layout({ children }) {
             ref={circleInstance}
             className="text-xl text-blue-600 dark:text-sky-500"
           >
-            SITE-IS-UNDER-CONSTRUCTION-
+            THANKS-FOR-STOPPING-BY-YOU-ROCK-
           </p>
         </div>
         <MobileMenu
