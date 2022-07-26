@@ -53,7 +53,7 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
               <Link href="/#contact">Contact</Link>
             </div>
           </li>
-          {mounted && (
+          {mounted ? (
             <li>
               {theme === "dark" ? (
                 <div
@@ -70,6 +70,10 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
                   <LightIcon />
                 </div>
               )}
+            </li>
+          ) : (
+            <li>
+              <div className="w-6 h-6"></div>
             </li>
           )}
         </ul>
