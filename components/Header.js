@@ -1,9 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactTooltip from "react-tooltip";
 
 export default function Header() {
-  const [tooltip, setTooltip] = useState(false);
+  const [tooltip, setTooltip] = useState(true);
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, [setMounted]);
 
   return (
     <header className="animate-slide-up sm:mx-4 md:mx-14">
@@ -42,7 +47,7 @@ export default function Header() {
         my understanding of tech. 🌱
       </h2>
       <div className="border-b-2 border-neutral-300 mt-2"></div>
-      {tooltip && (
+      {tooltip && mounted && (
         <ReactTooltip id="me">
           <span>{`hey! (◕‿‿◕)`}</span>
         </ReactTooltip>
