@@ -1,4 +1,4 @@
-import { format, parseISO } from "date-fns";
+import { format } from "date-fns";
 import { useRef } from "react";
 import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
@@ -43,7 +43,7 @@ export default function Blog({ posts }) {
                     dateTime={post.date}
                     className="text-slate-800 mr-5 before:content-['-'] dark:text-neutral-50"
                   >
-                    {format(parseISO(post.date), "LLLL d, yyyy")}
+                    {format(new Date(post.date), "LLLL d, yyyy")}
                   </time>
                   <p className="mr-5 text-neutral-500 dark:text-neutral-50">
                     {post.description}
