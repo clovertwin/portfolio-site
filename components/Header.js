@@ -3,7 +3,7 @@ import Image from "next/image";
 import ReactTooltip from "react-tooltip";
 
 export default function Header() {
-  const [tooltip, setTooltip] = useState(true);
+  const [tooltip, setTooltip] = useState(false);
 
   return (
     <header className="animate-slide-up sm:mx-4 md:mx-14">
