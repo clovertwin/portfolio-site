@@ -10,6 +10,11 @@ export async function getStaticProps() {
 }
 
 export default function PostListPage({ posts }) {
+  const dates = posts.map((post) => {
+    let dt = new Date(post.date.split("T")[0]);
+    return new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);
+  });
+
   return (
     <div>
       <div className="text-center">
@@ -21,7 +26,7 @@ export default function PostListPage({ posts }) {
       </div>
       <div className="text-lg sm:text-xl ">
         <ul>
-          {posts.map((post) => (
+          {posts.map((post, id) => (
             <li
               key={post.slug}
               className="mt-5 pl-4 flex flex-col justify-start sm:flex-row sm:pl-0"
@@ -30,7 +35,7 @@ export default function PostListPage({ posts }) {
                 dateTime={post.date}
                 className="text-slate-800 mr-5 before:content-['-'] dark:text-neutral-50"
               >
-                {format(parseISO(post.date), "LLLL d, yyyy")}
+                {format(dates[id], "LLLL d, yyyy")}
               </time>
               <p className="mr-5 text-neutral-500 dark:text-neutral-50">
                 {post.description}
