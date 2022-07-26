@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import DarkIcon from "./DarkIcon";
@@ -5,6 +6,12 @@ import LightIcon from "./LightIcon";
 import MenuIcon from "./MenuIcon";
 
 export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const handleOpenMenu = () => {
     setMobileNavOpen(true);
   };
@@ -46,41 +53,45 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
               <Link href="/#contact">Contact</Link>
             </div>
           </li>
-          <li>
-            {theme === "dark" ? (
-              <div
-                className="hover:cursor-pointer"
-                onClick={() => setTheme("light")}
-              >
-                <DarkIcon />
-              </div>
-            ) : (
-              <div
-                className="hover:cursor-pointer"
-                onClick={() => setTheme("dark")}
-              >
-                <LightIcon />
-              </div>
-            )}
-          </li>
+          {mounted && (
+            <li>
+              {theme === "dark" ? (
+                <div
+                  className="hover:cursor-pointer"
+                  onClick={() => setTheme("light")}
+                >
+                  <DarkIcon />
+                </div>
+              ) : (
+                <div
+                  className="hover:cursor-pointer"
+                  onClick={() => setTheme("dark")}
+                >
+                  <LightIcon />
+                </div>
+              )}
+            </li>
+          )}
         </ul>
       </div>
-      <div className="sm:hidden pb-1 flex items-center">
-        {theme === "dark" ? (
-          <div className="mr-5" onClick={() => setTheme("light")}>
-            <DarkIcon />
-          </div>
-        ) : (
-          <div className="mr-5" onClick={() => setTheme("dark")}>
-            <LightIcon />
-          </div>
-        )}
-        <div>
-          <div onClick={handleOpenMenu}>
-            <MenuIcon />
+      {mounted && (
+        <div className="sm:hidden pb-1 flex items-center">
+          {theme === "dark" ? (
+            <div className="mr-5" onClick={() => setTheme("light")}>
+              <DarkIcon />
+            </div>
+          ) : (
+            <div className="mr-5" onClick={() => setTheme("dark")}>
+              <LightIcon />
+            </div>
+          )}
+          <div>
+            <div onClick={handleOpenMenu}>
+              <MenuIcon />
+            </div>
           </div>
         </div>
-      </div>
+      )}
     </header>
   );
 }

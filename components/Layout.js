@@ -4,7 +4,6 @@ import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
 import CircleType from "circletype";
 import Footer from "./Footer";
-import Link from "next/link";
 
 export default function Layout({ children }) {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
