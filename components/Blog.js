@@ -7,6 +7,11 @@ export default function Blog({ posts }) {
   const blogRef = useRef();
   const isBlogVisible = useSectionVisible(blogRef);
 
+  const dates = posts.map((post) => {
+    let dt = new Date(post.date.split("T")[0]);
+    return new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);
+  });
+
   return (
     <div
       ref={blogRef}
@@ -36,14 +41,14 @@ export default function Blog({ posts }) {
             , or check out some of my recent ones below.
           </p>
           <ul>
-            {posts.map((post) => (
+            {posts.map((post, id) => (
               <li key={post.slug} className="mt-5">
                 <div className="flex flex-col justify-start sm:flex-row">
                   <time
                     dateTime={post.date}
                     className="text-slate-800 mr-5 before:content-['-'] dark:text-neutral-50"
                   >
-                    {format(new Date(post.date), "LLLL d, yyyy")}
+                    {format(dates[id], "LLLL d, yyyy")}
                   </time>
                   <p className="mr-5 text-neutral-500 dark:text-neutral-50">
                     {post.description}
