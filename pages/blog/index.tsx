@@ -1,15 +1,18 @@
 import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts } from "contentlayer/generated";
+import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
 
-export async function getStaticProps() {
+export const getStaticProps: GetStaticProps = async () => {
   const posts = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
   return { props: { posts } };
-}
+};
 
-export default function PostListPage({ posts }) {
+export default function PostListPage({
+  posts,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const dates = posts.map((post) => {
     let dt = new Date(post.date.split("T")[0]);
     return new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);

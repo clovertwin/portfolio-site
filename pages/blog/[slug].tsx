@@ -1,8 +1,9 @@
 import Link from "next/link";
-import { allPosts } from "contentlayer/generated";
+import { type GetStaticProps, type InferGetStaticPropsType } from "next";
+import { allPosts, type Post } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
-export async function getStaticPaths() {
+export const getStaticPaths = async () => {
   return {
     paths: allPosts.map((post) => ({
       params: {
@@ -11,17 +12,19 @@ export async function getStaticPaths() {
     })),
     fallback: false,
   };
-}
+};
 
-export async function getStaticProps({ params }) {
-  return {
-    props: {
-      post: allPosts.find((post) => post.slug === params?.slug),
-    },
-  };
-}
+export const getStaticProps: GetStaticProps<{ post: Post }> = async ({
+  params,
+}) => ({
+  props: {
+    post: allPosts.find((post) => post.slug === params?.slug),
+  },
+});
 
-export default function SinglePostPage({ post }) {
+export default function SinglePostPage({
+  post,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   const MDXContent = useMDXComponent(post.body.code);
   return (
     <>
