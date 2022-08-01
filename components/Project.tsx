@@ -1,15 +1,15 @@
 import { useRef } from "react";
 import useSectionVisible from "../hooks/useSectionVisible";
 
-export default function Project({
+const Project = ({
   projectTitle,
   description,
   imageLink,
   githubLink,
   liveDemo,
   isFirst,
-}) {
-  const projectRef = useRef();
+}) => {
+  const projectRef = useRef<HTMLDivElement>(null);
 
   const projectVisible = useSectionVisible(projectRef);
 
@@ -39,4 +39,6 @@ export default function Project({
       </div>
     </div>
   );
-}
+};
+
+export default Project;

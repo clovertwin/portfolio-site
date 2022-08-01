@@ -5,15 +5,19 @@ import PageNav from "./PageNav";
 import CircleType from "circletype";
 import Footer from "./Footer";
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
   const circleInstance = useRef();
   const { theme, setTheme } = useTheme();
 
   useEffect(() => {
-    //73
-    new CircleType(circleInstance.current).radius(73);
+    setMounted(true);
   }, []);
+
+  useEffect(() => {
+    mounted && new CircleType(circleInstance.current).radius(73);
+  }, [mounted]);
 
   return (
     <>
@@ -62,4 +66,6 @@ export default function Layout({ children }) {
       </div>
     </>
   );
-}
+};
+
+export default Layout;

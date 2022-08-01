@@ -1,17 +1,17 @@
-import { useRef, useState } from "react";
+import { useRef, useState, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
 import useSectionVisible from "../hooks/useSectionVisible";
 
-export default function Contact() {
+const Contact = () => {
   const [userName, setUserName] = useState("");
   const [userEmail, setUserEmail] = useState("");
   const [userMessage, setUserMessage] = useState("");
   const [buttonValue, setButtonValue] = useState("Send");
-  const formRef = useRef();
-  const contactRef = useRef();
+  const formRef = useRef<HTMLFormElement>(null);
+  const contactRef = useRef<HTMLDivElement>(null);
   const isContactVisible = useSectionVisible(contactRef);
 
-  const handleSendEmail = (e) => {
+  const handleSendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (userName.length > 0 && userEmail.length > 0 && userMessage.length > 0) {
       setButtonValue("Sending..");
@@ -103,7 +103,7 @@ export default function Contact() {
               value={userMessage}
               onChange={(e) => setUserMessage(e.target.value)}
               placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
-              rows="4"
+              rows={4}
               className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md block py-2 px-4 text-base transition ease-in-out duration-300 text-neutral-500 w-full focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
               name="message"
             />
@@ -119,4 +119,6 @@ export default function Contact() {
       </section>
     </div>
   );
-}
+};
+
+export default Contact;

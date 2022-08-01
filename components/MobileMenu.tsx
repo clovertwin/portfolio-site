@@ -1,7 +1,7 @@
 import Link from "next/link";
 import CloseIcon from "./CloseIcon";
 
-export default function MobileMenu({ mobileNavOpen, setMobileNavOpen }) {
+const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }) => {
   const handleCloseMenu = () => {
     setMobileNavOpen(false);
   };
@@ -57,4 +57,6 @@ export default function MobileMenu({ mobileNavOpen, setMobileNavOpen }) {
       </div>
     </div>
   );
-}
+};
+
+export default MobileMenu;

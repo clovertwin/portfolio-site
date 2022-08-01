@@ -1,8 +1,8 @@
 import { useRef } from "react";
 import useSectionVisible from "../hooks/useSectionVisible";
 
-export default function AboutMe() {
-  const aboutRef = useRef();
+const AboutMe = () => {
+  const aboutRef = useRef<HTMLDivElement>(null);
   const isAboutVisible = useSectionVisible(aboutRef);
 
   return (
@@ -62,4 +62,6 @@ export default function AboutMe() {
       </section>
     </div>
   );
-}
+};
+
+export default AboutMe;

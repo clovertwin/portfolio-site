@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactTooltip from "react-tooltip";
 
-export default function Header() {
+const Header = () => {
   const [tooltip, setTooltip] = useState(true);
   const [mounted, setMounted] = useState(false);
 
@@ -54,4 +54,6 @@ export default function Header() {
       )}
     </header>
   );
-}
+};
+
+export default Header;

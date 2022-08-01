@@ -3,8 +3,8 @@ import Project from "./Project";
 import useSectionVisible from "../hooks/useSectionVisible";
 import { projects as DATA } from "../data/projects/projects";
 
-export default function Projects() {
-  const projectsRef = useRef();
+const Projects = () => {
+  const projectsRef = useRef<HTMLDivElement>(null);
 
   const projectsVisible = useSectionVisible(projectsRef, 0.05);
 
@@ -38,4 +38,6 @@ export default function Projects() {
       </section>
     </div>
   );
-}
+};
+
+export default Projects;

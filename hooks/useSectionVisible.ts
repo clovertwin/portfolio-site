@@ -1,6 +1,9 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, MutableRefObject } from "react";
 
-export default function useSectionVisible(ref, threshold = 0.2) {
+export default function useSectionVisible(
+  ref: MutableRefObject<HTMLElement>,
+  threshold = 0.2
+) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {

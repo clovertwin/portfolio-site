@@ -3,8 +3,8 @@ import { useRef } from "react";
 import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
 
-export default function Blog({ posts }) {
-  const blogRef = useRef();
+const Blog = ({ posts }) => {
+  const blogRef = useRef<HTMLDivElement>(null);
   const isBlogVisible = useSectionVisible(blogRef);
 
   const dates = posts.map((post) => {
@@ -66,4 +66,6 @@ export default function Blog({ posts }) {
       </section>
     </div>
   );
-}
+};
+
+export default Blog;

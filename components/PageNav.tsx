@@ -5,7 +5,7 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import MenuIcon from "./MenuIcon";
 
-export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
+const PageNav = ({ setMobileNavOpen, theme, setTheme }) => {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -98,4 +98,6 @@ export default function PageNav({ setMobileNavOpen, theme, setTheme }) {
       )}
     </header>
   );
-}
+};
+
+export default PageNav;
