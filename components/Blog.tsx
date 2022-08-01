@@ -4,7 +4,11 @@ import Link from "next/link";
 import useSectionVisible from "../hooks/useSectionVisible";
 import { Post } from "contentlayer/generated";
 
-const Blog = ({ posts }) => {
+interface Props {
+  posts: Post[];
+}
+
+const Blog: React.FC<Props> = ({ posts }) => {
   const blogRef = useRef<HTMLDivElement>(null);
   const isBlogVisible = useSectionVisible(blogRef);
 
