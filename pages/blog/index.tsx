@@ -40,7 +40,7 @@ export default function PostListPage({
               >
                 {format(dates[id], "LLLL d, yyyy")}
               </time>
-              <p className="mr-5 text-neutral-500 dark:text-neutral-50">
+              <p className="mr-5 text-neutral-500 font-bold dark:text-neutral-50">
                 {post.description}
               </p>
               <Link href={`/blog/${post.slug}`}>
