@@ -4,13 +4,19 @@ import Link from "next/link";
 import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import MenuIcon from "./MenuIcon";
+import { useTheme } from "next-themes";
 
-const PageNav = ({ setMobileNavOpen, theme, setTheme }) => {
+const PageNav = ({ setMobileNavOpen }) => {
   const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   const handleOpenMenu = () => {
     setMobileNavOpen(true);
