@@ -9,6 +9,7 @@ import { useTheme } from "next-themes";
 const PageNav = ({ setMobileNavOpen }) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -61,7 +62,7 @@ const PageNav = ({ setMobileNavOpen }) => {
           </li>
           {mounted ? (
             <li>
-              {theme === "dark" ? (
+              {theme === "dark" || resolvedTheme === "dark" ? (
                 <div
                   className="hover:cursor-pointer"
                   onClick={() => setTheme("light")}
@@ -86,7 +87,7 @@ const PageNav = ({ setMobileNavOpen }) => {
       </div>
       {mounted && (
         <div className="sm:hidden pb-1 flex items-center">
-          {theme === "dark" ? (
+          {theme === "dark" || resolvedTheme === "dark" ? (
             <div className="mr-5" onClick={() => setTheme("light")}>
               <DarkIcon />
             </div>
