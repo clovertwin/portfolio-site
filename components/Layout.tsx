@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import { useTheme } from "next-themes";
 import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
 import CircleType from "circletype";
@@ -9,7 +8,6 @@ const Layout = ({ children }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
   const circleInstance = useRef();
-  const { theme, setTheme } = useTheme();
 
   useEffect(() => {
     setMounted(true);
@@ -52,11 +50,7 @@ const Layout = ({ children }) => {
           mobileNavOpen={mobileNavOpen}
           setMobileNavOpen={setMobileNavOpen}
         />
-        <PageNav
-          setMobileNavOpen={setMobileNavOpen}
-          theme={theme}
-          setTheme={setTheme}
-        />
+        <PageNav setMobileNavOpen={setMobileNavOpen} />
         <div className="flex flex-col justify-between min-h-screen">
           <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-md sm:pt-40">
             {children}
