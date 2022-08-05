@@ -38,7 +38,7 @@ const Header = () => {
           </h1>
         </div>
       </div>
-      <h2 className="text-neutral-500 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left dark:text-neutral-50">
+      <h2 className="text-neutral-600 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left dark:text-neutral-50">
         <strong>Welcome</strong> to my <i>corner</i> of the internet! 👋{" "}
         <strong>
           This is where I share what I&apos;m working on and learning

@@ -19,7 +19,7 @@ const AboutMe = () => {
             A little about myself
           </h2>
         </div>
-        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-500 sm:p-7 dark:border-sky-500 dark:bg-neutral-700 dark:text-neutral-50">
+        <div className="mt-5 p-4 border-2 border-blue-600 rounded-2xl text-left bg-white shadow-lg text-neutral-600 sm:p-7 dark:border-sky-500 dark:bg-neutral-700 dark:text-neutral-50">
           <p>
             Hi! <strong>My name is Shaun</strong>, and my passion is creating
             delightful things that live on the internet. I started teaching

@@ -36,7 +36,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
             This is my personal tech blog, where I write about projects I&apos;m
             working on and new exciting things I come across.
           </h3>
-          <p className="mt-5 text-neutral-500 dark:text-neutral-50">
+          <p className="mt-5 text-neutral-600 dark:text-neutral-50">
             You can see all of my posts 👉{" "}
             <Link href="/blog">
               <a className="underline underline-offset-1 font-bold text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
@@ -55,7 +55,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
                   >
                     {format(dates[id], "LLLL d, yyyy")}
                   </time>
-                  <p className="mr-5 text-neutral-500 font-bold dark:text-neutral-50">
+                  <p className="mr-5 text-neutral-600 font-bold dark:text-neutral-50">
                     {post.description}
                   </p>
                   <Link href={`/blog/${post.slug}`}>

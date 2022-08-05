@@ -23,7 +23,7 @@ const Project = ({
       <h3 className="text-slate-800 font-bold text-xl dark:text-neutral-50">
         {projectTitle}
       </h3>
-      <p className="mt-2 text-neutral-500 dark:text-neutral-50">
+      <p className="mt-2 text-neutral-600 dark:text-neutral-50">
         {description}
       </p>
       <div className="mt-5">
