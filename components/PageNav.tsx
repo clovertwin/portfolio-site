@@ -28,13 +28,15 @@ const PageNav = ({ setMobileNavOpen }) => {
       <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500">
         <Link href="/">
           <a>
-            <Image
-              alt="photo of me"
-              src="/images/profile-pic.jpg"
-              width={300}
-              height={300}
-              priority
-            />
+            <div className="h-10 w-10 relative">
+              <Image
+                alt="photo of me"
+                src="/images/profile-pic.jpg"
+                priority
+                layout="fill"
+                objectFit="cover"
+              />
+            </div>
           </a>
         </Link>
       </div>
