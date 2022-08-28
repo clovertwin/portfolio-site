@@ -4,6 +4,42 @@ import LiveDemoIcon from "../../components/LiveDemoIcon";
 
 export const projects = [
   {
+    projectTitle: "Ecommerce Store",
+    description: "Built using Next.js, Tailwind, Typescript, and Sanity",
+    imageLink: (
+      <a
+        href="https://github.com/clovertwin/ecommerce-ts"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          alt="screenshot of ecommerce store"
+          src="/images/ecommerce-site-pic.jpg"
+          width={400}
+          height={400}
+        />
+      </a>
+    ),
+    githubLink: (
+      <a
+        href="https://github.com/clovertwin/ecommerce-ts"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <CodeIcon />
+      </a>
+    ),
+    liveDemo: (
+      <a
+        href="https://ecommerce-ts-mu.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <LiveDemoIcon />
+      </a>
+    ),
+  },
+  {
     projectTitle: "Chat Application",
     description:
       "Real-time chat application built with React, Node, Express, and Socket.io",
@@ -119,54 +155,6 @@ export const projects = [
     liveDemo: (
       <a
         href="https://advice-generator-ruddy-ten.vercel.app/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <LiveDemoIcon />
-      </a>
-    ),
-  },
-  {
-    projectTitle: "Pokedex",
-    description: (
-      <>
-        Fetch and display the first 150 pokemon using the{" "}
-        <a
-          href="https://pokeapi.co/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
-        >
-          PokeApi
-        </a>
-      </>
-    ),
-    imageLink: (
-      <a
-        href="https://github.com/clovertwin/pokedex"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          alt="screenshot of pokedex"
-          src="/images/pokedex-pic.jpg"
-          width={400}
-          height={400}
-        />
-      </a>
-    ),
-    githubLink: (
-      <a
-        href="https://github.com/clovertwin/pokedex"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <CodeIcon />
-      </a>
-    ),
-    liveDemo: (
-      <a
-        href="https://clovertwin.github.io/pokedex/"
         target="_blank"
         rel="noopener noreferrer"
       >
