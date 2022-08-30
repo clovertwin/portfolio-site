@@ -52,7 +52,7 @@ const AboutMe = () => {
                 <p>-Next.js</p>
               </div>
               <div className="flex flex-col">
-                <p>-Styled Components</p>
+                <p>-Typescript</p>
                 <p>-Tailwindcss</p>
                 <p>-Node.js</p>
               </div>
