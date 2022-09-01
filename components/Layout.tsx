@@ -1,21 +1,10 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
-import CircleType from "circletype";
 import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
-  const [mounted, setMounted] = useState(false);
-  const circleInstance = useRef();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  useEffect(() => {
-    mounted && new CircleType(circleInstance.current).radius(73);
-  }, [mounted]);
 
   return (
     <>
@@ -35,17 +24,6 @@ const Layout = ({ children }) => {
         <rect width="100%" height="100%" filter="url(#delbarocks)"></rect>
       </svg>
       <div className="min-h-screen bg-neutral-50 selection:bg-blue-600/90 selection:text-white transition ease-in-out duration-300 dark:bg-zinc-800 dark:selection:bg-sky-500/90">
-        <div
-          role="complementary"
-          className="hidden absolute lg:block lg:right-[10%] lg:top-28 lg:fixed lg:animate-spin-slow xl:right-[15%]"
-        >
-          <p
-            ref={circleInstance}
-            className="text-xl text-blue-600 dark:text-sky-500"
-          >
-            THANKS-FOR-STOPPING-BY-YOU-ROCK-
-          </p>
-        </div>
         <MobileMenu
           mobileNavOpen={mobileNavOpen}
           setMobileNavOpen={setMobileNavOpen}

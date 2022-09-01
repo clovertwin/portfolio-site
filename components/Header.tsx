@@ -26,8 +26,8 @@ const Header = () => {
           <Image
             alt="picture of me"
             src="/images/profile-pic.jpg"
-            width={597}
-            height={597}
+            width={150}
+            height={150}
             priority
           />
         </div>
