@@ -5,9 +5,11 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import MenuIcon from "./MenuIcon";
 import { useTheme } from "next-themes";
+import ReactTooltip from "react-tooltip";
 
 const PageNav = ({ setMobileNavOpen }) => {
   const [mounted, setMounted] = useState(false);
+  const [tooltip, setTooltip] = useState(true);
   const { theme, setTheme } = useTheme();
   const { resolvedTheme } = useTheme();
 
@@ -24,11 +26,22 @@ const PageNav = ({ setMobileNavOpen }) => {
   };
 
   return (
-    <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md transition ease-in-out duration-300 shadow-neutral-900/5 sm:px-14 dark:bg-zinc-800">
+    <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md transition ease-in-out duration-300 shadow-neutral-900/5 sm:px-14 dark:bg-zinc-800 dark:shadow-none">
       <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500">
         <Link href="/">
           <a>
-            <div className="h-10 w-10 relative">
+            <div
+              data-tip
+              data-for="home"
+              onMouseEnter={() => setTooltip(true)}
+              onMouseLeave={() => {
+                setTooltip(false);
+                setTimeout(() => {
+                  setTooltip(true);
+                }, 50);
+              }}
+              className="h-10 w-10 relative"
+            >
               <Image
                 alt="photo of me"
                 src="/images/profile-pic.jpg"
@@ -104,6 +117,11 @@ const PageNav = ({ setMobileNavOpen }) => {
             </div>
           </div>
         </div>
+      )}
+      {tooltip && mounted && (
+        <ReactTooltip id="home" place="bottom">
+          <span className="text-3xl">🏡</span>
+        </ReactTooltip>
       )}
     </header>
   );
