@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CodeIcon from "../../components/CodeIcon";
-import LiveDemoIcon from "../../components/LiveDemoIcon";
+import { AiFillGithub } from "react-icons/ai";
+import { MdLaunch } from "react-icons/md";
 
 export const projects = [
   {
@@ -26,7 +26,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <CodeIcon />
+        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -35,7 +35,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LiveDemoIcon />
+        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
   },
@@ -63,7 +63,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <CodeIcon />
+        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -72,7 +72,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LiveDemoIcon />
+        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
   },
@@ -100,7 +100,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <CodeIcon />
+        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -109,7 +109,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LiveDemoIcon />
+        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
   },
@@ -149,7 +149,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <CodeIcon />
+        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -158,7 +158,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <LiveDemoIcon />
+        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
       </a>
     ),
   },

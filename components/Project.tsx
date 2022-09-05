@@ -28,7 +28,7 @@ const Project = ({
       </p>
       <div className="mt-5">
         <div className="flex justify-center">{imageLink}</div>
-        <div className="flex items-center justify-end pr-2 mt-5">
+        <div className="flex items-center justify-end pr-2 mt-2">
           <div className="mr-5 hover:scale-125 transition ease-in-out duration-300">
             {githubLink}
           </div>

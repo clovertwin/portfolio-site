@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CloseIcon from "./CloseIcon";
+import { IoCloseOutline } from "react-icons/io5";
 
 const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }) => {
   const handleCloseMenu = () => {
@@ -14,9 +14,9 @@ const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }) => {
         } fixed z-40 items-end bg-slate-900/50 pl-10 backdrop-blur w-screen justify-end`}
       >
         <div className="min-h-screen bg-neutral-50 px-4 pt-5 max-w-xs w-full">
-          <div className="flex justify-end pr-2">
+          <div className="flex justify-end">
             <div onClick={handleCloseMenu}>
-              <CloseIcon />
+              <IoCloseOutline className="text-blue-600 text-4xl dark:text-sky-500" />
             </div>
           </div>
           <nav>
