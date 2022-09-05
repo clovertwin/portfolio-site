@@ -5,6 +5,7 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import { useTheme } from "next-themes";
 import { FiMenu } from "react-icons/fi";
+import navImage from "../public/images/profile-pic.jpg";
 
 const PageNav = ({ setMobileNavOpen }) => {
   const [mounted, setMounted] = useState(false);
@@ -29,13 +30,7 @@ const PageNav = ({ setMobileNavOpen }) => {
         <Link href="/">
           <a>
             <div className="h-10 w-10 relative">
-              <Image
-                alt="photo of me"
-                src="/images/profile-pic.jpg"
-                priority
-                layout="fill"
-                objectFit="cover"
-              />
+              <Image alt="photo of me" src={navImage} />
             </div>
           </a>
         </Link>
