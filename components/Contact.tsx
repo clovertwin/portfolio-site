@@ -67,7 +67,7 @@ const Contact = () => {
               onChange={(e) => setUserName(e.target.value)}
               value={userName}
               placeholder="Your name"
-              className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base transition ease-in-out duration-300 focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
+              className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md w-full block py-2 px-4 text-neutral-500 text-base transition ease-in-out duration-300 focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:focus:border-sky-300 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
               type="text"
               name="user_name"
             />
@@ -78,7 +78,7 @@ const Contact = () => {
               value={userEmail}
               onChange={(e) => setUserEmail(e.target.value)}
               placeholder="email@email.com"
-              className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md w-full block py-2 px-4 text-base transition ease-in-out duration-300 text-neutral-500 focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
+              className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md w-full block py-2 px-4 text-base transition ease-in-out duration-300 text-neutral-500 focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:focus:border-sky-300 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
               type="email"
               name="user_email"
             />
@@ -91,13 +91,13 @@ const Contact = () => {
             onChange={(e) => setUserMessage(e.target.value)}
             placeholder="Leave a short message, or maybe just say hi, I'll be sure to respond!"
             rows={4}
-            className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md block py-2 px-4 text-base transition ease-in-out duration-300 text-neutral-500 w-full focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
+            className="border-2 border-blue-400 bg-white placeholder:text-neutral-400 rounded-md block py-2 px-4 text-base transition ease-in-out duration-300 text-neutral-500 w-full focus:outline-none focus:border-blue-600 dark:border-sky-500 dark:focus:border-sky-300 dark:bg-neutral-500 dark:text-neutral-50 dark:placeholder:text-neutral-50"
             name="message"
           />
         </div>
         <div className="flex justify-center">
           <input
-            className="block mb-2 px-20 py-2 border-2 border-blue-600 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:border-blue-700 transition ease-in-out duration-300 hover:cursor-pointer dark:border-sky-500 dark:bg-sky-500 dark:text-neutral-50 dark:hover:border-sky-600 dark:hover:bg-sky-600"
+            className="block mb-2 px-20 py-2 border-2 border-blue-600 rounded-2xl bg-blue-600 text-white font-bold hover:bg-blue-700 hover:border-blue-700 transition ease-in-out duration-300 hover:cursor-pointer dark:border-sky-500 dark:focus:border-sky-300 dark:bg-sky-500 dark:text-neutral-50 dark:hover:border-sky-600 dark:hover:bg-sky-600"
             type="submit"
             value={buttonValue}
           />
