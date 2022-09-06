@@ -17,7 +17,9 @@ const PageNav = ({ setMobileNavOpen }) => {
   }, []);
 
   if (!mounted) {
-    return null;
+    return (
+      <div className="h-20 w-full sticky top-0 z-30 bg-neutral-50 shadow-md shadow-neutral-900/5 dark:bg-zinc-800 dark:shadow-none"></div>
+    );
   }
 
   const handleOpenMenu = () => {
