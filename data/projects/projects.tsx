@@ -26,7 +26,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -35,7 +35,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 text:fill-blue-600 dark:text-sky-500" />
       </a>
     ),
   },
@@ -63,7 +63,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -72,7 +72,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
   },
@@ -100,7 +100,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -109,7 +109,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
   },
@@ -149,7 +149,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <AiFillGithub className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
     liveDemo: (
@@ -158,7 +158,7 @@ export const projects = [
         target="_blank"
         rel="noopener noreferrer"
       >
-        <MdLaunch className="fill-blue-500 text-2xl transition ease-in-out duration-300 hover:fill-blue-600 dark:fill-sky-500" />
+        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
       </a>
     ),
   },
