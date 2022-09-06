@@ -1,5 +1,4 @@
-import { useRef } from "react";
-import useSectionVisible from "../hooks/useSectionVisible";
+import AnimateInView from "components/AnimateInView";
 
 const Project = ({
   projectTitle,
@@ -9,14 +8,9 @@ const Project = ({
   liveDemo,
   isFirst,
 }) => {
-  const projectRef = useRef<HTMLDivElement>(null);
-
-  const projectVisible = useSectionVisible(projectRef);
-
   return (
-    <div
-      ref={projectRef}
-      className={`${projectVisible ? "animate-slide-up" : "opacity-0"} ${
+    <AnimateInView
+      classes={`${
         isFirst ? "sm:mt-5" : "mt-5"
       } bg-white rounded-2xl p-4 shadow-lg border-2 border-blue-600 sm:border-white sm:hover:border-blue-600 sm:hover:scale-105 transition ease-in-out duration-300 dark:bg-neutral-700 dark:border-sky-500 dark:hover:border-sky-500`}
     >
@@ -37,7 +31,7 @@ const Project = ({
           </div>
         </div>
       </div>
-    </div>
+    </AnimateInView>
   );
 };
 

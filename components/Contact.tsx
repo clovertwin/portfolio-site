@@ -1,6 +1,6 @@
 import { useRef, useState, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
-import useSectionVisible from "../hooks/useSectionVisible";
+import AnimateInView from "components/AnimateInView";
 
 const Contact = () => {
   const [userName, setUserName] = useState("");
@@ -8,8 +8,6 @@ const Contact = () => {
   const [userMessage, setUserMessage] = useState("");
   const [buttonValue, setButtonValue] = useState("Send");
   const formRef = useRef<HTMLFormElement>(null);
-  const contactRef = useRef<HTMLDivElement>(null);
-  const isContactVisible = useSectionVisible(contactRef);
 
   const handleSendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,10 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <div
-      ref={contactRef}
-      className={isContactVisible ? "animate-slide-up" : "opacity-0"}
-    >
+    <AnimateInView>
       <section
         id="contact"
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
@@ -117,7 +112,7 @@ const Contact = () => {
           </div>
         </form>
       </section>
-    </div>
+    </AnimateInView>
   );
 };
 

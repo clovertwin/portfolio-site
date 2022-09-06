@@ -1,27 +1,20 @@
 import { format } from "date-fns";
-import { useRef } from "react";
 import Link from "next/link";
-import useSectionVisible from "../hooks/useSectionVisible";
 import { Post } from "contentlayer/generated";
+import AnimateInView from "./AnimateInView";
 
 interface Props {
   posts: Post[];
 }
 
-const Blog: React.FC<Props> = ({ posts }) => {
-  const blogRef = useRef<HTMLDivElement>(null);
-  const isBlogVisible = useSectionVisible(blogRef);
-
+const Blog = ({ posts }: Props) => {
   const dates = posts.map((post) => {
     let dt = new Date(post.date.split("T")[0]);
     return new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);
   });
 
   return (
-    <div
-      ref={blogRef}
-      className={isBlogVisible ? "animate-slide-up" : "opacity-0"}
-    >
+    <AnimateInView>
       <section
         id="blog"
         className="text-lg mt-20 text-center scroll-m-24 sm:text-xl sm:mt-40"
@@ -69,7 +62,7 @@ const Blog: React.FC<Props> = ({ posts }) => {
           </ul>
         </div>
       </section>
-    </div>
+    </AnimateInView>
   );
 };
 

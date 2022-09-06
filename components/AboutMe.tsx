@@ -1,18 +1,11 @@
-import { useRef } from "react";
-import useSectionVisible from "../hooks/useSectionVisible";
+import AnimateInView from "components/AnimateInView";
 
 const AboutMe = () => {
-  const aboutRef = useRef<HTMLDivElement>(null);
-  const isAboutVisible = useSectionVisible(aboutRef);
-
   return (
-    <div
-      ref={aboutRef}
-      className={isAboutVisible ? "animate-slide-up" : "opacity-0"}
-    >
+    <AnimateInView>
       <section
         id="aboutMe"
-        className="scroll-mt-24 text-lg text-center mt-20 sm:text-xl sm:mt-52 sm:scroll-m-30"
+        className="scroll-mt-24 text-lg text-center mt-24 sm:text-xl sm:mt-64 sm:scroll-m-30"
       >
         <div className="border-b-4 border-blue-600 inline-block transition ease-in-out duration-300 dark:border-sky-500">
           <h2 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-3xl sm:text-4xl dark:text-neutral-50">
@@ -60,7 +53,7 @@ const AboutMe = () => {
           </details>
         </div>
       </section>
-    </div>
+    </AnimateInView>
   );
 };
 
