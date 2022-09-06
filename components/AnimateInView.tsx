@@ -35,7 +35,6 @@ const AnimateInView = ({ children, classes }: Props) => {
       animate={controls}
       initial="hidden"
       className={classes}
-      exit={{ opacity: 0 }}
     >
       {children}
     </motion.div>
