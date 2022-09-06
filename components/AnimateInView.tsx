@@ -8,7 +8,11 @@ interface Props {
 }
 
 const divVariants = {
-  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+  visible: {
+    opacity: 1,
+    scale: 1,
+    transition: { duration: 0.3, type: "spring" },
+  },
   hidden: { opacity: 0, scale: 0.5 },
 };
 
@@ -29,6 +33,7 @@ const AnimateInView = ({ children, classes }: Props) => {
       animate={controls}
       initial="hidden"
       className={classes}
+      exit={{ opacity: 0 }}
     >
       {children}
     </motion.div>
