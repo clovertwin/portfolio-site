@@ -10,19 +10,21 @@ interface Props {
 const divVariants = {
   visible: {
     opacity: 1,
-    scale: 1,
+    y: "0px",
     transition: { duration: 0.5, type: "spring" },
   },
-  hidden: { opacity: 0, scale: 0.5 },
+  hidden: { opacity: 0, y: "20px" },
 };
 
 const AnimateInView = ({ children, classes }: Props) => {
   const controls = useAnimation();
-  const [ref, inView] = useInView();
+  const [ref, inView] = useInView({ threshold: 0.3 });
 
   useEffect(() => {
     if (inView) {
       controls.start("visible");
+    } else {
+      controls.start("hidden");
     }
   }, [controls, inView]);
 

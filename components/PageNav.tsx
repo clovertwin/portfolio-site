@@ -30,7 +30,7 @@ const PageNav = ({ setMobileNavOpen }) => {
         <Link href="/">
           <a>
             <div className="h-10 w-10 relative">
-              <Image alt="photo of me" src={navImage} priority />
+              <Image alt="photo of me" src={navImage} />
             </div>
           </a>
         </Link>
