@@ -12,7 +12,7 @@ const Header = () => {
   }, [setMounted]);
 
   return (
-    <header className="animate-slide-up sm:mx-4 md:mx-14">
+    <header className="animate-slide-up h-[90vh] sm:mx-4 md:mx-14">
       <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
         <div
           data-tip
