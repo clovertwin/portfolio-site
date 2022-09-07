@@ -23,13 +23,13 @@ const Layout = ({ children }) => {
         </filter>
         <rect width="100%" height="100%" filter="url(#delbarocks)"></rect>
       </svg>
-      <div className="min-h-screen bg-neutral-50 selection:bg-blue-600/90 selection:text-white transition ease-in-out duration-300 dark:bg-zinc-800 dark:selection:bg-sky-500/90">
+      <div className="min-h-screen selection:bg-blue-600/90 selection:text-white dark:selection:bg-sky-500/90">
         <MobileMenu
           mobileNavOpen={mobileNavOpen}
           setMobileNavOpen={setMobileNavOpen}
         />
         <PageNav setMobileNavOpen={setMobileNavOpen} />
-        <div className="flex flex-col justify-between min-h-screen">
+        <div className="flex flex-col justify-between transition ease-in-out duration-300 min-h-screen bg-neutral-50 dark:bg-zinc-800">
           <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-md sm:pt-40">
             {children}
           </main>
