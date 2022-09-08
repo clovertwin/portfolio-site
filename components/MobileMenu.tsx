@@ -2,7 +2,12 @@ import Link from "next/link";
 import { IoCloseOutline } from "react-icons/io5";
 import { Fade } from "react-awesome-reveal";
 
-const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }) => {
+interface Props {
+  mobileNavOpen: boolean;
+  setMobileNavOpen: React.Dispatch<boolean>;
+}
+
+const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }: Props) => {
   const handleCloseMenu = () => {
     setMobileNavOpen(false);
   };

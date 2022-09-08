@@ -12,34 +12,37 @@ const Contact = () => {
   const handleSendEmail = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (userName.length > 0 && userEmail.length > 0 && userMessage.length > 0) {
-      setButtonValue("Sending..");
-      formRef.current.contact_number.value = (Math.random() * 100000) | 0;
-      emailjs
-        .sendForm(
-          "contact_service",
-          "contact_form",
-          formRef.current,
-          process.env.NEXT_PUBLIC_EMAILJS_API_KEY
-        )
-        .then(
-          (result) => {
-            console.log(result);
-            setButtonValue("Email Sent!");
-            setTimeout(() => {
-              setButtonValue("Send");
-            }, 5000);
-          },
-          (error) => {
-            console.log(error.text);
-            setButtonValue("Error Sending");
-            setTimeout(() => {
-              setButtonValue("Send");
-            }, 5000);
-          }
-        );
-      setUserName("");
-      setUserEmail("");
-      setUserMessage("");
+      if (formRef.current !== null) {
+        setButtonValue("Sending..");
+        formRef.current.contact_number.value =
+          Math.floor(Math.random() * (99999 - 10000 + 1)) + 10000;
+        emailjs
+          .sendForm(
+            "contact_service",
+            "contact_form",
+            formRef.current,
+            process.env.NEXT_PUBLIC_EMAILJS_API_KEY
+          )
+          .then(
+            (result) => {
+              console.log(result);
+              setButtonValue("Email Sent!");
+              setTimeout(() => {
+                setButtonValue("Send");
+              }, 5000);
+            },
+            (error) => {
+              console.log(error.text);
+              setButtonValue("Error Sending");
+              setTimeout(() => {
+                setButtonValue("Send");
+              }, 5000);
+            }
+          );
+        setUserName("");
+        setUserEmail("");
+        setUserMessage("");
+      }
     } else {
       return;
     }

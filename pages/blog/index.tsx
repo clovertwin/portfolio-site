@@ -1,10 +1,10 @@
 import { compareDesc, format, parseISO } from "date-fns";
-import { allPosts } from "contentlayer/generated";
+import { allPosts, Post } from "contentlayer/generated";
 import type { GetStaticProps, InferGetStaticPropsType } from "next";
 import Link from "next/link";
 
 export const getStaticProps: GetStaticProps = async () => {
-  const posts = allPosts.sort((a, b) =>
+  const posts: Post[] = allPosts.sort((a, b) =>
     compareDesc(new Date(a.date), new Date(b.date))
   );
   return { props: { posts } };
@@ -13,7 +13,7 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function PostListPage({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
-  const dates = posts.map((post) => {
+  const dates = posts.map((post: Post) => {
     let dt = new Date(post.date.split("T")[0]);
     return new Date(dt.valueOf() + dt.getTimezoneOffset() * 60 * 1000);
   });
@@ -29,7 +29,7 @@ export default function PostListPage({
       </div>
       <div className="text-lg sm:text-xl ">
         <ul>
-          {posts.map((post, id) => (
+          {posts.map((post: Post, id: number) => (
             <li
               key={post.slug}
               className="mt-5 pl-4 flex flex-col justify-start sm:flex-row sm:pl-0"

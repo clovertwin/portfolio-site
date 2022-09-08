@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { type GetStaticProps, type InferGetStaticPropsType } from "next";
-import { allPosts, type Post } from "contentlayer/generated";
+import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
 
 export const getStaticPaths = async () => {
@@ -14,9 +14,7 @@ export const getStaticPaths = async () => {
   };
 };
 
-export const getStaticProps: GetStaticProps<{ post: Post }> = async ({
-  params,
-}) => ({
+export const getStaticProps: GetStaticProps = async ({ params }) => ({
   props: {
     post: allPosts.find((post) => post.slug === params?.slug),
   },

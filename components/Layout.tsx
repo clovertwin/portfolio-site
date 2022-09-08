@@ -3,7 +3,11 @@ import MobileMenu from "./MobileMenu";
 import PageNav from "./PageNav";
 import Footer from "./Footer";
 
-const Layout = ({ children }) => {
+interface Props {
+  children?: React.ReactNode;
+}
+
+const Layout = ({ children }: Props) => {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   return (
