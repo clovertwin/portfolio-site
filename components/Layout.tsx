@@ -30,7 +30,7 @@ const Layout = ({ children }) => {
         />
         <PageNav setMobileNavOpen={setMobileNavOpen} />
         <div className="flex flex-col justify-between transition ease-in-out duration-300 min-h-screen bg-neutral-50 dark:bg-zinc-800">
-          <main className="font-inter relative w-full mx-auto pb-20 px-4 pt-20 sm:max-w-screen-md sm:pt-40">
+          <main className="font-inter relative w-full mx-auto pb-20 px-4 sm:max-w-screen-md">
             {children}
           </main>
           <Footer />

@@ -12,7 +12,7 @@ const Header = () => {
   }, [setMounted]);
 
   return (
-    <header className="h-[80vh] sm:mx-4 md:mx-14">
+    <header className="h-[90vh] flex flex-col justify-center sm:mx-4 md:mx-14">
       <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
         <div
           data-tip
