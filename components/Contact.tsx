@@ -1,6 +1,6 @@
 import { useRef, useState, FormEvent } from "react";
 import emailjs from "@emailjs/browser";
-import AnimateInView from "./AnimateInView";
+import { Fade } from "react-awesome-reveal";
 
 const Contact = () => {
   const [userName, setUserName] = useState("");
@@ -46,7 +46,7 @@ const Contact = () => {
   };
 
   return (
-    <AnimateInView>
+    <Fade fraction={0.2}>
       <section
         id="contact"
         className="text-lg mt-20 text-center sm:text-xl sm:mt-40 scroll-m-24"
@@ -112,7 +112,7 @@ const Contact = () => {
           </div>
         </form>
       </section>
-    </AnimateInView>
+    </Fade>
   );
 };
 

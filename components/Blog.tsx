@@ -1,7 +1,7 @@
 import { format } from "date-fns";
 import Link from "next/link";
 import { Post } from "contentlayer/generated";
-import AnimateInView from "./AnimateInView";
+import { Fade } from "react-awesome-reveal";
 
 interface Props {
   posts: Post[];
@@ -14,7 +14,7 @@ const Blog = ({ posts }: Props) => {
   });
 
   return (
-    <AnimateInView>
+    <Fade fraction={0.2}>
       <section
         id="blog"
         className="text-lg mt-20 text-center scroll-m-24 sm:text-xl sm:mt-40"
@@ -62,7 +62,7 @@ const Blog = ({ posts }: Props) => {
           </ul>
         </div>
       </section>
-    </AnimateInView>
+    </Fade>
   );
 };
 

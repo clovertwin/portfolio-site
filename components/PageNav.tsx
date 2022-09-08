@@ -97,7 +97,7 @@ const PageNav = ({ setMobileNavOpen }) => {
           )}
           <div>
             <div onClick={handleOpenMenu}>
-              <FiMenu className="text-blue-700 text-3xl dark:text-sky-500" />
+              <FiMenu className="text-blue-700 text-3xl hover:cursor-pointer dark:text-sky-500" />
             </div>
           </div>
         </div>

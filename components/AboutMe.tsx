@@ -1,8 +1,8 @@
-import AnimateInView from "./AnimateInView";
+import { Fade } from "react-awesome-reveal";
 
 const AboutMe = () => {
   return (
-    <AnimateInView>
+    <Fade fraction={0.2}>
       <section
         id="aboutMe"
         className="scroll-mt-24 text-lg text-center sm:text-xl sm:scroll-m-30"
@@ -53,7 +53,7 @@ const AboutMe = () => {
           </details>
         </div>
       </section>
-    </AnimateInView>
+    </Fade>
   );
 };
 
