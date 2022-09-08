@@ -1,3 +1,12 @@
+interface Props {
+  projectTitle: string;
+  description: string | React.ReactNode;
+  imageLink: JSX.Element;
+  githubLink: JSX.Element;
+  liveDemo: JSX.Element;
+  isFirst: boolean;
+}
+
 const Project = ({
   projectTitle,
   description,
@@ -5,7 +14,7 @@ const Project = ({
   githubLink,
   liveDemo,
   isFirst,
-}) => {
+}: Props) => {
   return (
     <div
       className={`${

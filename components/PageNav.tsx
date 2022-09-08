@@ -7,7 +7,11 @@ import { useTheme } from "next-themes";
 import { FiMenu } from "react-icons/fi";
 import navImage from "../public/images/profile-pic.jpg";
 
-const PageNav = ({ setMobileNavOpen }) => {
+interface Props {
+  setMobileNavOpen: React.Dispatch<boolean>;
+}
+
+const PageNav = ({ setMobileNavOpen }: Props) => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
   const { resolvedTheme } = useTheme();
