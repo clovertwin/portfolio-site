@@ -33,7 +33,7 @@ export default function SinglePostPage({
           <a>&#8592; Back to all posts</a>
         </Link>
       </div>
-      <div className="text-center">
+      <div className="text-center mt-20 md:mt-28">
         <div className="border-b-4 border-blue-600 inline-block mb-10 mt-10 sm:mb-20 sm:mt-0 dark:border-sky-500">
           <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl dark:text-neutral-50">
             {post.title}

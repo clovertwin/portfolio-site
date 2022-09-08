@@ -20,7 +20,7 @@ export default function PostListPage({
 
   return (
     <div>
-      <div className="text-center">
+      <div className="text-center mt-20 md:mt-28">
         <div className="border-b-4 border-blue-600 inline-block mb-5 sm:mb-10 dark:border-sky-500">
           <h1 className="font-manrope tracking-tighter text-slate-800 font-extrabold text-4xl sm:text-5xl dark:text-neutral-50">
             Blog posts
