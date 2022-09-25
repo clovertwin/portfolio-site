@@ -42,6 +42,7 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
             layout="fill"
             objectFit="cover"
             priority
+            quality={50}
           />
         </a>
       </Link>
