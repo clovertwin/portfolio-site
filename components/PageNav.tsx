@@ -31,20 +31,17 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
 
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md transition ease-in-out duration-300 shadow-neutral-900/5 sm:px-14 dark:bg-zinc-800 dark:shadow-none">
-      <div className="rounded-full h-[40px] w-[40px] overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500">
-        <Link href="/">
-          <a>
-            <div className="h-10 w-10 relative">
-              <Image
-                alt="photo of me"
-                src="/images/profile-pic.jpg"
-                height={40}
-                width={40}
-              />
-            </div>
-          </a>
-        </Link>
-      </div>
+      <Link href="/">
+        <a className="relative rounded-full h-10 w-10 overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500">
+          <Image
+            alt="photo of me"
+            src="/images/profile-pic.jpg"
+            layout="fill"
+            objectFit="cover"
+            priority
+          />
+        </a>
+      </Link>
       <div className="font-inter hidden sm:block">
         <ul className="flex items-center">
           <li className="p-2 mr-5">

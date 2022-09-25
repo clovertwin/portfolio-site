@@ -21,12 +21,12 @@ const Header = () => {
             setTooltip(false);
             setTimeout(() => setTooltip(true), 50);
           }}
-          className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600 transition ease-in-out duration-300 dark:ring-sky-500"
+          className="rounded-full relative h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600 transition ease-in-out duration-300 dark:ring-sky-500"
         >
           <Image
             alt="picture of me"
-            width={150}
-            height={150}
+            layout="fill"
+            objectFit="cover"
             src="/images/profile-pic.jpg"
             priority
           />
