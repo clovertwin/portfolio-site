@@ -32,31 +32,41 @@ const MobileMenu = ({ mobileNavOpen, setMobileNavOpen }: Props) => {
                   onClick={handleCloseMenu}
                   className="pt-6 hover:text-blue-600"
                 >
-                  <Link href="/">Home</Link>
+                  <Link href="/">
+                    <a aria-label="link to home page">Home</a>
+                  </Link>
                 </li>
                 <li
                   onClick={handleCloseMenu}
                   className="pt-6 hover:text-blue-600"
                 >
-                  <Link href="/#aboutMe">About</Link>
+                  <Link href="/#aboutMe">
+                    <a aria-label="link to about section">About</a>
+                  </Link>
                 </li>
                 <li
                   onClick={handleCloseMenu}
                   className="pt-6 hover:text-blue-600"
                 >
-                  <Link href="/#projects">Projects</Link>
+                  <Link href="/#projects">
+                    <a aria-label="link to projects section">Projects</a>
+                  </Link>
                 </li>
                 <li
                   onClick={handleCloseMenu}
                   className="pt-6 hover:text-blue-600"
                 >
-                  <Link href="/#blog">Blog</Link>
+                  <Link href="/#blog">
+                    <a aria-label="link to blog section">Blog</a>
+                  </Link>
                 </li>
                 <li
                   onClick={handleCloseMenu}
                   className="pt-6 hover:text-blue-600"
                 >
-                  <Link href="/#contact">Contact</Link>
+                  <Link href="/#contact">
+                    <a aria-label="link to contact me section">Contact</a>
+                  </Link>
                 </li>
               </ul>
             </nav>

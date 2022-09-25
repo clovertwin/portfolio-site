@@ -32,7 +32,10 @@ const Blog = ({ posts }: Props) => {
           <p className="mt-5 text-neutral-600 dark:text-neutral-50">
             You can see all of my posts 👉{" "}
             <Link href="/blog">
-              <a className="underline underline-offset-1 font-bold text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
+              <a
+                aria-label="link to all blog posts"
+                className="underline underline-offset-1 font-bold text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
+              >
                 here
               </a>
             </Link>
@@ -52,7 +55,10 @@ const Blog = ({ posts }: Props) => {
                     {post.description}
                   </p>
                   <Link href={`/blog/${post.slug}`}>
-                    <a className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
+                    <a
+                      aria-label={`link to blog post titled ${post.title}`}
+                      className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
+                    >
                       read more...
                     </a>
                   </Link>

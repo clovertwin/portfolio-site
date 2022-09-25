@@ -32,7 +32,10 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
   return (
     <header className="sticky top-0 z-30 flex items-center justify-between bg-neutral-50 px-5 py-5 shadow-md transition ease-in-out duration-300 shadow-neutral-900/5 sm:px-14 dark:bg-zinc-800 dark:shadow-none">
       <Link href="/">
-        <a className="relative rounded-full h-10 w-10 overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500">
+        <a
+          aria-label="link to home page"
+          className="relative rounded-full h-10 w-10 overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500"
+        >
           <Image
             alt="photo of me"
             src="/images/profile-pic.jpg"
@@ -46,22 +49,30 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
         <ul className="flex items-center">
           <li className="p-2 mr-5">
             <div className="hover:cursor-pointer text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
-              <Link href="/#aboutMe">About</Link>
+              <Link href="/#aboutMe">
+                <a aria-label="link to about section">About</a>
+              </Link>
             </div>
           </li>
           <li className="p-2 mr-5 text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
             <div className="hover:cursor-pointer text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
-              <Link href="/#projects">Projects</Link>
+              <Link href="/#projects">
+                <a aria-label="link to projects section">Projects</a>
+              </Link>
             </div>
           </li>
           <li className="p-2 mr-5 text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
             <div className="hover:cursor-pointer text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
-              <Link href="/#blog">Blog</Link>
+              <Link href="/#blog">
+                <a aria-label="link to blog section">Blog</a>
+              </Link>
             </div>
           </li>
           <li className="p-2 mr-5 text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
             <div className="hover:cursor-pointer text-neutral-500 hover:text-sky-500 dark:text-neutral-50 dark:hover:text-sky-500">
-              <Link href="/#contact">Contact</Link>
+              <Link href="/#contact">
+                <a aria-label="link to contact me section">Contact</a>
+              </Link>
             </div>
           </li>
           {mounted ? (

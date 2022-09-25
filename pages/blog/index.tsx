@@ -44,7 +44,10 @@ export default function PostListPage({
                 {post.description}
               </p>
               <Link href={`/blog/${post.slug}`}>
-                <a className="text-blue-600 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
+                <a
+                  aria-label="link to full blog post"
+                  className="text-blue-600 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
+                >
                   read more...
                 </a>
               </Link>

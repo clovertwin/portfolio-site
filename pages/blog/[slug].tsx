@@ -28,7 +28,7 @@ export default function SinglePostPage({
     <>
       <div className="absolute top-10 text-blue-600 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">
         <Link href="/blog">
-          <a>&#8592; Back to all posts</a>
+          <a aria-label="link to all posts page">&#8592; Back to all posts</a>
         </Link>
       </div>
       <div className="text-center mt-20 md:mt-28">
