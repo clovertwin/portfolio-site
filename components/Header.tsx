@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactTooltip from "react-tooltip";
-import headerImage from "../public/images/profile-pic.jpg";
 
 const Header = () => {
   const [tooltip, setTooltip] = useState(true);
@@ -24,7 +23,13 @@ const Header = () => {
           }}
           className="rounded-full h-[150px] w-[150px] overflow-hidden ring-8 ring-blue-600 transition ease-in-out duration-300 dark:ring-sky-500"
         >
-          <Image alt="picture of me" src={headerImage} priority />
+          <Image
+            alt="picture of me"
+            width={150}
+            height={150}
+            src="/images/profile-pic.jpg"
+            priority
+          />
         </div>
         <div className="mt-5 text-center sm:mt-3 sm:text-left">
           <h1 className="font-manrope tracking-tighter text-slate-800 text-4xl font-extrabold sm:text-5xl dark:text-neutral-50">

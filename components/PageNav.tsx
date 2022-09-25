@@ -5,7 +5,6 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import { useTheme } from "next-themes";
 import { FiMenu } from "react-icons/fi";
-import navImage from "../public/images/profile-pic.jpg";
 
 interface Props {
   setMobileNavOpen: React.Dispatch<boolean>;
@@ -36,7 +35,12 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
         <Link href="/">
           <a>
             <div className="h-10 w-10 relative">
-              <Image alt="photo of me" src={navImage} />
+              <Image
+                alt="photo of me"
+                src="/images/profile-pic.jpg"
+                height={40}
+                width={40}
+              />
             </div>
           </a>
         </Link>
