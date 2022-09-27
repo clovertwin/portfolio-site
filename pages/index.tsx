@@ -10,7 +10,13 @@ import Contact from "../components/Contact";
 export const getStaticProps: GetStaticProps = async () => {
   const posts = allPosts
     .sort((a, b) => compareDesc(new Date(a.date), new Date(b.date)))
-    .slice(0, 3);
+    .slice(0, 3)
+    .map((post) => ({
+      slug: post.slug,
+      date: post.date,
+      description: post.description,
+      title: post.title,
+    }));
   return { props: { posts } };
 };
 

@@ -1,7 +1,13 @@
 import { format } from "date-fns";
 import Link from "next/link";
-import { Post } from "contentlayer/generated";
 import { Fade } from "react-awesome-reveal";
+
+interface Post {
+  slug: string;
+  date: string;
+  description: string;
+  title: string;
+}
 
 interface Props {
   posts: Post[];
