@@ -19,11 +19,11 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return (
-      <div className="h-20 w-full sticky top-0 z-30 bg-neutral-50 shadow-md shadow-neutral-900/5 dark:bg-zinc-800 dark:shadow-none"></div>
-    );
-  }
+  // if (!mounted) {
+  //   return (
+  //     <div className="h-20 w-full sticky top-0 z-30 bg-neutral-50 shadow-md shadow-neutral-900/5 dark:bg-zinc-800 dark:shadow-none"></div>
+  //   );
+  // }
 
   const handleOpenMenu = () => {
     setMobileNavOpen(true);
@@ -41,7 +41,7 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
             src="/images/profile-pic.jpg"
             layout="fill"
             objectFit="cover"
-            priority
+            priority={true}
             quality={50}
           />
         </a>

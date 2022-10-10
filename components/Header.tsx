@@ -28,7 +28,7 @@ const Header = () => {
             layout="fill"
             objectFit="cover"
             src="/images/profile-pic.jpg"
-            priority
+            priority={true}
           />
         </div>
         <div className="mt-5 text-center sm:mt-3 sm:text-left">
