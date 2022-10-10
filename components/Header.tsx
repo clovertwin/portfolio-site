@@ -38,14 +38,14 @@ const Header = () => {
           </h1>
         </div>
       </div>
-      <h2 className="text-neutral-600 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left dark:text-neutral-50">
+      <p className="text-neutral-600 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left dark:text-neutral-50">
         <strong>Welcome</strong> to my <i>corner</i> of the internet! 👋{" "}
         <strong>
           This is where I share what I&apos;m working on and learning
         </strong>
         , in addition to serving as a <i>digital garden</i> where I can grow in
         my understanding of tech. 🌱
-      </h2>
+      </p>
       <div className="border-b-2 border-neutral-300 mt-2"></div>
       {tooltip && mounted && (
         <ReactTooltip id="me">

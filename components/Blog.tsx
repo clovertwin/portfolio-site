@@ -49,26 +49,20 @@ const Blog = ({ posts }: Props) => {
           </p>
           <ul>
             {posts.map((post, id) => (
-              <li key={post.slug} className="mt-5">
-                <div className="flex flex-col justify-start sm:flex-row">
-                  <time
-                    dateTime={post.date}
-                    className="text-slate-800 mr-5 before:content-['-'] dark:text-neutral-50"
-                  >
-                    {format(dates[id], "LLLL d, yyyy")}
-                  </time>
-                  <p className="mr-5 text-neutral-600 font-bold dark:text-neutral-50">
-                    {post.description}
-                  </p>
-                  <Link href={`/blog/${post.slug}`}>
-                    <a
-                      aria-label={`link to blog post titled ${post.title}`}
-                      className="text-blue-600 transition ease-in-out duration-300 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600"
-                    >
-                      read more...
-                    </a>
-                  </Link>
-                </div>
+              <li key={post.slug}>
+                <Link href={`/blog/${post.slug}`}>
+                  <div className="mt-5 rounded-2xl border-2 border-blue-500  p-4 text-left shadow-lg transition ease-in-out duration-300 hover:cursor-pointer hover:bg-gray-200 dark:border-sky-500 dark:bg-neutral-500 dark:hover:bg-neutral-700">
+                    <h3 className="text-xl font-bold text-slate-800 dark:text-neutral-50">
+                      {post.title}
+                    </h3>
+                    <p className="text-sm text-neutral-500 mt-1 dark:text-neutral-50">
+                      {format(dates[id], "LLLL d, yyyy")}
+                    </p>
+                    <p className="mt-4 text-neutral-600 text-lg dark:text-neutral-50">
+                      {post.description}
+                    </p>
+                  </div>
+                </Link>
               </li>
             ))}
           </ul>
