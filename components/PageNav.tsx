@@ -34,15 +34,15 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
       <Link href="/">
         <a
           aria-label="link to home page"
-          className="relative rounded-full h-10 w-10 overflow-hidden ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500"
+          className="rounded-full h-10 w-10 ring-4 ring-blue-600 transition ease-in-out duration-300 hover:cursor-pointer dark:ring-sky-500"
         >
           <Image
             alt="photo of me"
             src="/images/profile-pic.jpg"
-            layout="fill"
-            objectFit="cover"
-            priority={true}
-            quality={50}
+            priority
+            height={40}
+            width={40}
+            className="rounded-full"
           />
         </a>
       </Link>
