@@ -39,10 +39,9 @@ const Header = () => {
           </h1>
         </div>
       </div>
-      <p className="text-neutral-600 text-lg mt-4 text-center sm:text-xl sm:mt-5 sm:text-left dark:text-neutral-50">
-        <strong>Welcome to my corner of the internet!</strong>👋 This is where I
-        share what I&apos;m working on and learning, in addition to serving as a{" "}
-        <i>digital garden</i> where I can grow in my understanding of tech. 🌱
+      <p className="text-neutral-600 text-lg mt-4 text-center sm:text-2xl sm:mt-5 sm:text-left dark:text-neutral-50">
+        <strong>Welcome to my corner of the internet!</strong> 👋 This is where
+        I share what I&apos;m working on and learning. 🌱
       </p>
       <div className="border-b-2 border-neutral-300 mt-2"></div>
       {tooltip && mounted && (
