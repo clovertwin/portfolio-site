@@ -5,6 +5,7 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import { useTheme } from "next-themes";
 import { FiMenu } from "react-icons/fi";
+import profilePic from "../public/images/profile-pic.jpg";
 
 interface Props {
   setMobileNavOpen: React.Dispatch<boolean>;
@@ -38,10 +39,8 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
         >
           <Image
             alt="photo of me"
-            src="/images/profile-pic.jpg"
+            src={profilePic}
             priority
-            height={40}
-            width={40}
             className="rounded-full"
           />
         </a>
