@@ -8,7 +8,7 @@ export const projects = [
     description: "Built using Next.js, Tailwind, Typescript, and Sanity",
     imageLink: (
       <a
-        href="https://github.com/clovertwin/ecommerce-ts"
+        href="https://ecommerce-ts-mu.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -45,13 +45,13 @@ export const projects = [
       "Real-time chat application built with React, Node, Express, and Socket.io",
     imageLink: (
       <a
-        href="https://github.com/clovertwin/send-it"
+        href="https://chat-app-clovertwin.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <Image
           alt="screenshot of chat application"
-          src="/images/chat-app.jpg"
+          src="/images/chatapp.jpg"
           width={400}
           height={400}
         />
@@ -59,7 +59,7 @@ export const projects = [
     ),
     githubLink: (
       <a
-        href="https://github.com/clovertwin/send-it"
+        href="https://github.com/clovertwin/chat-app"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -68,7 +68,7 @@ export const projects = [
     ),
     liveDemo: (
       <a
-        href="https://gregarious-phoenix-9b68a5.netlify.app/"
+        href="https://chat-app-clovertwin.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -82,7 +82,7 @@ export const projects = [
       "Clone of the desktop Mac Calculator built with Vanilla Javascript and CSS.",
     imageLink: (
       <a
-        href="https://github.com/clovertwin/mac-calculator"
+        href="https://clovertwin.github.io/mac-calculator/"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -131,7 +131,7 @@ export const projects = [
     ),
     imageLink: (
       <a
-        href="https://github.com/clovertwin/advice-generator"
+        href="https://advice-generator-ruddy-ten.vercel.app/"
         target="_blank"
         rel="noopener noreferrer"
       >
