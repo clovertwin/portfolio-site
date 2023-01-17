@@ -50,7 +50,7 @@ const Blog = ({ posts }: Props) => {
           <ul>
             {posts.map((post, id) => (
               <li key={post.slug}>
-                <Link href={`/blog/${post.slug}`}>
+                <Link href={`/blog/${post.slug}`} scroll={false}>
                   <div className="mt-5 rounded-2xl border-2 border-blue-500  p-4 text-left shadow-lg transition ease-in-out duration-300 hover:cursor-pointer hover:bg-gray-200 dark:border-sky-500 dark:bg-neutral-500 dark:hover:bg-neutral-700">
                     <h3 className="text-xl font-bold text-slate-800 dark:text-neutral-50">
                       {post.title}

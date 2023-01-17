@@ -2,6 +2,7 @@ import Link from "next/link";
 import { type GetStaticProps, type InferGetStaticPropsType } from "next";
 import { allPosts } from "contentlayer/generated";
 import { useMDXComponent } from "next-contentlayer/hooks";
+import { useEffect } from "react";
 
 export const getStaticPaths = async () => {
   return {
@@ -24,6 +25,14 @@ export default function SinglePostPage({
   post,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   const MDXContent = useMDXComponent(post.body.code);
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "auto",
+    });
+  }, []);
+
   return (
     <>
       <div className="absolute top-10 text-blue-600 hover:text-blue-400 dark:text-sky-500 dark:hover:text-sky-600">

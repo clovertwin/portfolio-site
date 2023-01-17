@@ -24,12 +24,12 @@ export default function Home({
   posts,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
-    <>
+    <main>
       <Header />
       <AboutMe />
       <Projects />
       <Blog posts={posts} />
       <Contact />
-    </>
+    </main>
   );
 }

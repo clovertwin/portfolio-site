@@ -16,7 +16,7 @@ class MyDocument extends Document {
   }
   render() {
     return (
-      <Html lang="en" className="scroll-smooth">
+      <Html lang="en">
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link
@@ -29,7 +29,7 @@ class MyDocument extends Document {
             rel="stylesheet"
           />
         </Head>
-        <body>
+        <body className="overscroll-none">
           <Main />
           <NextScript />
         </body>

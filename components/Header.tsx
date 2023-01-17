@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="h-[90vh] flex flex-col justify-center sm:mx-4 md:mx-14">
-      <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row sm:justify-start">
+      <div className="flex flex-col items-center justify-center sm:space-x-10 sm:flex-row">
         <div
           data-tip
           data-for="me"
@@ -38,7 +38,7 @@ const Header = () => {
           </h1>
         </div>
       </div>
-      <p className="text-neutral-600 text-lg mt-4 text-center sm:text-2xl sm:mt-5 sm:text-left dark:text-neutral-50">
+      <p className="text-neutral-600 text-lg mt-4 text-center sm:text-2xl sm:mt-5 ml-6 sm:text-left dark:text-neutral-50">
         <strong>Welcome to my corner of the internet!</strong> 👋 This is where
         I share what I&apos;m working on and learning. 🌱
       </p>
