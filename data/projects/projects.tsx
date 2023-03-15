@@ -18,6 +18,7 @@ export const projects = [
           src="https://res.cloudinary.com/diyccpxjc/image/upload/v1678849918/Screenshot_2023-03-14_at_11.04.29_PM-min_puzi2r.png"
           width={400}
           height={400}
+          unoptimized
         />
       </a>
     ),
@@ -55,6 +56,7 @@ export const projects = [
           src="/images/ecommerce-site-pic.jpg"
           width={400}
           height={400}
+          unoptimized
         />
       </a>
     ),
@@ -93,6 +95,7 @@ export const projects = [
           src="/images/chatapp.jpg"
           width={400}
           height={400}
+          unoptimized
         />
       </a>
     ),
@@ -143,6 +146,7 @@ export const projects = [
           src="/images/advice-pic.jpg"
           width={400}
           height={400}
+          unoptimized
         />
       </a>
     ),

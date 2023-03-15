@@ -5,7 +5,6 @@ import DarkIcon from "./DarkIcon";
 import LightIcon from "./LightIcon";
 import { useTheme } from "next-themes";
 import { FiMenu } from "react-icons/fi";
-import profilePic from "../public/images/profile-pic.jpg";
 
 interface Props {
   setMobileNavOpen: React.Dispatch<boolean>;
@@ -41,6 +40,7 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
             alt="photo of me"
             src="https://res.cloudinary.com/diyccpxjc/image/upload/v1678848993/profile-pic_pwwtly.jpg"
             priority
+            unoptimized
             width={200}
             height={200}
             className="rounded-full"

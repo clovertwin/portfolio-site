@@ -29,6 +29,7 @@ const Header = () => {
             width={400}
             height={400}
             priority
+            unoptimized
             className="rounded-full"
           />
         </div>
