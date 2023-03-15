@@ -39,8 +39,10 @@ const PageNav = ({ setMobileNavOpen }: Props) => {
         >
           <Image
             alt="photo of me"
-            src={profilePic}
+            src="https://res.cloudinary.com/diyccpxjc/image/upload/v1678848993/profile-pic_pwwtly.jpg"
             priority
+            width={200}
+            height={200}
             className="rounded-full"
           />
         </a>

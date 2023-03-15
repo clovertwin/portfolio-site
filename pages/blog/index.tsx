@@ -44,7 +44,7 @@ export default function PostListPage({
           {posts.map((post: BlogPost, id: number) => (
             <li key={post.slug}>
               <Link href={`/blog/${post.slug}`}>
-                <div className="mt-5 rounded-2xl border-2 border-blue-500  p-4 text-left shadow-lg transition ease-in-out duration-300 hover:cursor-pointer hover:bg-gray-200 dark:border-sky-500 dark:bg-neutral-500 dark:hover:bg-neutral-700">
+                <div className="mt-5 rounded-2xl border-2 border-blue-500 p-4 text-left shadow-lg transition ease-in-out duration-300 hover:cursor-pointer hover:bg-gray-200 dark:border-sky-500 dark:bg-neutral-700 dark:hover:bg-neutral-500">
                   <h3 className="text-xl font-bold text-slate-800 dark:text-neutral-50">
                     {post.title}
                   </h3>

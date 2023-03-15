@@ -4,7 +4,45 @@ import { MdLaunch } from "react-icons/md";
 
 export const projects = [
   {
+    projectTitle: "Spotify Clone",
+    id: 1,
+    description: "App to control Spotify built with Nextjs and Typescript.",
+    imageLink: (
+      <a
+        href="https://song-share.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Image
+          alt="screenshot of Song-Share"
+          src="https://res.cloudinary.com/diyccpxjc/image/upload/v1678849918/Screenshot_2023-03-14_at_11.04.29_PM-min_puzi2r.png"
+          width={400}
+          height={400}
+        />
+      </a>
+    ),
+    githubLink: (
+      <a
+        href="https://github.com/clovertwin/song-share"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
+      </a>
+    ),
+    liveDemo: (
+      <a
+        href="https://song-share.vercel.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
+      </a>
+    ),
+  },
+  {
     projectTitle: "Ecommerce Store",
+    id: 2,
     description: "Built using Next.js, Tailwind, Typescript, and Sanity",
     imageLink: (
       <a
@@ -41,6 +79,7 @@ export const projects = [
   },
   {
     projectTitle: "Chat Application",
+    id: 3,
     description:
       "Real-time chat application built with React, Node, Express, and Socket.io",
     imageLink: (
@@ -77,44 +116,8 @@ export const projects = [
     ),
   },
   {
-    projectTitle: "Mac Calculator",
-    description:
-      "Clone of the desktop Mac Calculator built with Vanilla Javascript and CSS.",
-    imageLink: (
-      <a
-        href="https://clovertwin.github.io/mac-calculator/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <Image
-          alt="screenshot of calculator"
-          src="/images/calculator-pic.jpg"
-          width={400}
-          height={400}
-        />
-      </a>
-    ),
-    githubLink: (
-      <a
-        href="https://github.com/clovertwin/mac-calculator"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <AiFillGithub className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
-      </a>
-    ),
-    liveDemo: (
-      <a
-        href="https://clovertwin.github.io/mac-calculator/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <MdLaunch className="text-blue-500 text-2xl transition ease-in-out duration-300 hover:text-blue-600 dark:text-sky-500" />
-      </a>
-    ),
-  },
-  {
     projectTitle: "Advice Generator",
+    id: 4,
     description: (
       <>
         Get advice using the{" "}

@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import ReactTooltip from "react-tooltip";
-import profilePic from "../public/images/profile-pic.jpg";
 
 const Header = () => {
   const [tooltip, setTooltip] = useState(true);
@@ -26,7 +25,9 @@ const Header = () => {
         >
           <Image
             alt="picture of me"
-            src={profilePic}
+            src="https://res.cloudinary.com/diyccpxjc/image/upload/v1678848993/profile-pic_pwwtly.jpg"
+            width={400}
+            height={400}
             priority
             className="rounded-full"
           />
